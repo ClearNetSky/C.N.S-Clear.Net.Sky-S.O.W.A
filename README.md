@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://aristarhucolov.github.io/C.N.S-Clear.Net.Sky-S.O.W.A/)
+[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://clearnetsky.github.io/C.N.S-Clear.Net.Sky-S.O.W.A/)
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -12,7 +12,7 @@
 
 *The beginning of a new era in Internet protection*
 
-[🌐 Live Demo](https://aristarhucolov.github.io/C.N.S-Clear.Net.Sky-S.O.W.A/) • [📖 Documentation](#features) • [🤝 Contributing](#contributing)
+[🌐 Live Demo](https://clearnetsky.github.io/C.N.S-Clear.Net.Sky-S.O.W.A/) • [📖 Documentation](#features) • [🤝 Contributing](#contributing)
 
 </div>
 
@@ -70,7 +70,7 @@ S.O.W.A (Сова никогда не спит) олицетворяет пос�
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/AristarhUcolov/C.N.S-Clear.Net.Sky-S.O.W.A.git
+git clone https://github.com/ClearNetSky/C.N.S-Clear.Net.Sky-S.O.W.A.git
 cd C.N.S-Clear.Net.Sky-S.O.W.A
 ```
 
@@ -236,15 +236,15 @@ This project is licensed under the **GNU General Public License v3.0** - see the
 
 ## 🔗 Links | Ссылки
 
-- **Live Website:** [https://aristarhucolov.github.io/C.N.S-Clear.Net.Sky-S.O.W.A/](https://aristarhucolov.github.io/C.N.S-Clear.Net.Sky-S.O.W.A/)
-- **GitHub Repository:** [https://github.com/AristarhUcolov/C.N.S-Clear.Net.Sky-S.O.W.A](https://github.com/AristarhUcolov/C.N.S-Clear.Net.Sky-S.O.W.A)
-- **Issues & Bug Reports:** [GitHub Issues](https://github.com/AristarhUcolov/C.N.S-Clear.Net.Sky-S.O.W.A/issues)
+- **Live Website:** [https://clearnetsky.github.io/C.N.S-Clear.Net.Sky-S.O.W.A/](https://clearnetsky.github.io/C.N.S-Clear.Net.Sky-S.O.W.A/)
+- **GitHub Repository:** [https://github.com/ClearNetSky/C.N.S-Clear.Net.Sky-S.O.W.A](https://github.com/ClearNetSky/C.N.S-Clear.Net.Sky-S.O.W.A)
+- **Issues & Bug Reports:** [GitHub Issues](https://github.com/ClearNetSky/C.N.S-Clear.Net.Sky-S.O.W.A/issues)
 
 ---
 
 ## 📞 Contact | Контакты
 
-For inquiries, support, or collaboration opportunities, please visit our [Contact Page](https://aristarhucolov.github.io/C.N.S-Clear.Net.Sky-S.O.W.A/pages/en/contact.html).
+For inquiries, support, or collaboration opportunities, please visit our [Contact Page](https://clearnetsky.github.io/C.N.S-Clear.Net.Sky-S.O.W.A/pages/en/contact.html).
 
 ---
 
