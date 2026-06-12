@@ -57,3 +57,30 @@
 .cyber-pulse {
     animation: cyber-pulse 2s infinite;
 }
+
+/* ------------------------------------------------------------
+   Mobile performance: stacked backdrop-filter blurs (content,
+   every card and the header) are very expensive on phone GPUs
+   and were a major source of jank. Drop the blur on small
+   screens and use slightly more opaque backgrounds instead.
+   ------------------------------------------------------------ */
+@media (max-width: 768px) {
+    .main-content {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        background: rgba(8, 10, 20, 0.92);
+    }
+    .dashboard-card {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        background: var(--bg-secondary);
+    }
+    .main-header {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+    .modal {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+}

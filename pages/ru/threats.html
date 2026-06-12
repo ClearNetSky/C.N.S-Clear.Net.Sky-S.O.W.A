@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Oxanium:wght@300;400;600;700&family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" href="../../images/logo-icon.png" type="image/png">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMwYTBhMWEiLz48cGF0aCBkPSJNMTggMTQgTDI0IDI0IEwxMyAyMiBaIiBmaWxsPSIjMDA2NmZmIi8+PHBhdGggZD0iTTQ2IDE0IEw0MCAyNCBMNTEgMjIgWiIgZmlsbD0iIzAwNjZmZiIvPjxwYXRoIGQ9Ik0zMiA5IEM0NiA5IDUzIDIxIDUzIDM0IEM1MyA0OCA0NCA1NyAzMiA1NyBDMjAgNTcgMTEgNDggMTEgMzQgQzExIDIxIDE4IDkgMzIgOSBaIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDY2ZmYiIHN0cm9rZS13aWR0aD0iNSIvPjxjaXJjbGUgY3g9IjI0IiBjeT0iMzAiIHI9IjgiIGZpbGw9IiMwMDY2ZmYiLz48Y2lyY2xlIGN4PSI0MCIgY3k9IjMwIiByPSI4IiBmaWxsPSIjMDA2NmZmIi8+PGNpcmNsZSBjeD0iMjQiIGN5PSIzMCIgcj0iMy40IiBmaWxsPSIjMGEwYTFhIi8+PGNpcmNsZSBjeD0iNDAiIGN5PSIzMCIgcj0iMy40IiBmaWxsPSIjMGEwYTFhIi8+PHBhdGggZD0iTTMyIDM2IEwyOCA0MC41IEwzNiA0MC41IFoiIGZpbGw9IiMwMDY2ZmYiLz48L3N2Zz4=">
 </head>
 <body class="cyber-theme">
     <div id="particles-js"></div>
@@ -28,8 +28,16 @@
         <div class="header-container">
             <div class="logo-container">
                 <div class="logo-icon">
-                    <i class="fas fa-shield-alt"></i>
-                    <div class="pulse-effect"></div>
+                    <svg class="owl-emblem" viewBox="0 0 64 64" role="img" aria-label="S.O.W.A owl emblem">
+                        <path class="owl-fill" d="M18 14 L24 24 L13 22 Z"/>
+                        <path class="owl-fill" d="M46 14 L40 24 L51 22 Z"/>
+                        <path class="owl-body" d="M32 9 C46 9 53 21 53 34 C53 48 44 57 32 57 C20 57 11 48 11 34 C11 21 18 9 32 9 Z"/>
+                        <circle class="owl-fill owl-eye" cx="24" cy="30" r="8"/>
+                        <circle class="owl-fill owl-eye right" cx="40" cy="30" r="8"/>
+                        <circle class="owl-pupil" cx="24" cy="30" r="3.4"/>
+                        <circle class="owl-pupil" cx="40" cy="30" r="3.4"/>
+                        <path class="owl-fill" d="M32 36 L28 40.5 L36 40.5 Z"/>
+                    </svg>
                 </div>
                 <div class="logo-text">
                     <span class="logo-primary">CLEAR NET SKY</span>
@@ -54,8 +62,11 @@
                         <div class="flag ru-flag small"></div>
                     </button>
                 </div>
-                <button id="sound-toggle" class="icon-button">
+                <button id="sound-toggle" class="icon-button" title="Toggle sound">
                     <i class="fas fa-volume-up"></i>
+                </button>
+                <button id="theme-toggle" class="icon-button" title="Change theme">
+                    <i class="fas fa-palette"></i>
                 </button>
             </div>
         </div>
@@ -184,11 +195,11 @@
             <!-- Threat Detail -->
             <div class="threat-detail">
                 <div class="detail-header">
-                    <h2>-</h2>
+                    <h2>Emotet</h2>
                     <div class="threat-meta">
-                        <span>Тип: Троян</span>
+                        <span>Тип: Троян / Ботнет</span>
                         <span>Уровень риска: Высокий</span>
-                        <span>-</span>
+                        <span>Впервые обнаружен: 2014 · всё ещё активен</span>
                     </div>
                 </div>
                 <div class="detail-content">
@@ -202,7 +213,7 @@
                     </div>
                     <div class="detail-section">
                         <h3>Индикаторы компрометации (IOC)</h3>
-                        <p>Хэши файлов: -..., dns-запросы: -, IP-адреса: -</p>
+                        <p>Пример SHA-256: 0a1b…e9f4 · Подозрительные C2-домены и IP блокируются на уровне DNS в реальном времени. Обращайте внимание на неожиданный запуск PowerShell из макросов Office.</p>
                     </div>
                     <div class="detail-section">
                         <h3>Методы распространения</h3>
@@ -232,7 +243,7 @@
                     <a href="https://www.youtube.com/@Aristarh.Ucolov" class="social-link"><i class="fab fa-youtube"></i></a>
                     <a href="https://www.linkedin.com/in/aristarhucolov" class="social-link"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/AristarhUcolov" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="https://www.twitter.com/AristarhUcolov" class="social-link"><i class="fab fa-x"></i></a>
+                    <a href="https://www.twitter.com/AristarhUcolov" class="social-link"><i class="fab fa-x-twitter"></i></a>
                 </div>
             </div>
             <div class="footer-section">
@@ -256,7 +267,7 @@
                 <h4 data-i18n="contact-us">Свяжитесь с нами</h4>
                 <ul>
                     <li><i class="fas fa-envelope"></i> <a href="mailto:aristarh.ucolov@gmail.com">aristarh.ucolov@gmail.com</a></li>
-                    <li><i class="fas fa-phone"></i> <a href="tel:Скоро">Скоро</a></li>
+                    <li><i class="fas fa-phone"></i> <a href="#">Скоро</a></li>
                 </ul>
             </div>
         </div>
@@ -269,6 +280,7 @@
     <script src="../../js/particles.js"></script>
     <script src="../../js/language.js"></script>
     <script src="../../js/sounds.js"></script>
+    <script src="../../js/threats.js"></script>
     <script src="../../js/main.js"></script>
 </body>
 </html>

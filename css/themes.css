@@ -1,0 +1,220 @@
+/* ============================================================
+   themes.css — Theme engine for Clear Net Sky / S.O.W.A
+   Multiple selectable colour schemes applied via <body> class.
+   The default scheme (Cyber Blue) lives in :root inside main.css;
+   the classes below override those custom properties.
+   ============================================================ */
+
+/* Smooth cross-fade when switching themes */
+body,
+.main-header,
+.main-footer,
+.dashboard-card,
+.stat-card,
+.modal-content,
+.card-header,
+.button,
+.primary-button,
+.secondary-button {
+    transition:
+        background-color 0.4s ease,
+        color 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+/* ---------- 1. CYBER BLUE (default / dark) ---------- */
+body.cyber-theme {
+    --primary-color: #0066ff;
+    --primary-light: #4d94ff;
+    --primary-dark: #0047b3;
+    --secondary-color: #00b4ff;
+    --secondary-light: #66d1ff;
+    --secondary-dark: #0080cc;
+    --accent-color: #00ff9d;
+
+    --text-primary: #f4f8ff;
+    --text-secondary: #aab8cc;
+    --text-muted: #6c7a92;
+
+    --bg-primary: #060814;
+    --bg-secondary: #0e1226;
+    --bg-tertiary: #161b33;
+    --bg-quaternary: #222a4a;
+
+    --border-color: #243056;
+    --glow: rgba(0, 102, 255, 0.45);
+    --grid-color: rgba(0, 102, 255, 0.10);
+}
+
+/* ---------- 2. MATRIX GREEN ---------- */
+body.matrix-theme {
+    --primary-color: #00ff7f;
+    --primary-light: #66ffb2;
+    --primary-dark: #00b359;
+    --secondary-color: #00e676;
+    --secondary-light: #69f0ae;
+    --secondary-dark: #00a152;
+    --accent-color: #aaff00;
+
+    --text-primary: #e6ffe6;
+    --text-secondary: #8fd9a8;
+    --text-muted: #5c8a6c;
+
+    --bg-primary: #02100a;
+    --bg-secondary: #04190f;
+    --bg-tertiary: #08251a;
+    --bg-quaternary: #0d3526;
+
+    --border-color: #14512f;
+    --glow: rgba(0, 255, 127, 0.45);
+    --grid-color: rgba(0, 255, 127, 0.10);
+}
+
+/* ---------- 3. CRIMSON ALERT ---------- */
+body.crimson-theme {
+    --primary-color: #ff2d55;
+    --primary-light: #ff6b85;
+    --primary-dark: #c30f33;
+    --secondary-color: #ff7849;
+    --secondary-light: #ffa07a;
+    --secondary-dark: #cc4a1f;
+    --accent-color: #ffd000;
+
+    --text-primary: #fff0f2;
+    --text-secondary: #e0a9b1;
+    --text-muted: #966069;
+
+    --bg-primary: #120407;
+    --bg-secondary: #1d070d;
+    --bg-tertiary: #2a0c15;
+    --bg-quaternary: #3d1320;
+
+    --border-color: #56202f;
+    --glow: rgba(255, 45, 85, 0.45);
+    --grid-color: rgba(255, 45, 85, 0.10);
+}
+
+/* ---------- 4. LIGHT / DAY OPS ---------- */
+body.light-theme {
+    --primary-color: #0052cc;
+    --primary-light: #3b7dd8;
+    --primary-dark: #003d99;
+    --secondary-color: #0091ea;
+    --secondary-light: #4fc3f7;
+    --secondary-dark: #006db3;
+    --accent-color: #00a86b;
+
+    --text-primary: #0d1b2a;
+    --text-secondary: #38465a;
+    --text-muted: #6b7a8d;
+
+    --bg-primary: #eef2f8;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #e3eaf3;
+    --bg-quaternary: #d3deee;
+
+    --border-color: #c4d0e0;
+    --shadow-color: rgba(13, 27, 42, 0.12);
+    --glow: rgba(0, 82, 204, 0.25);
+    --grid-color: rgba(0, 82, 204, 0.06);
+}
+
+/* Light theme readability tweaks */
+body.light-theme {
+    background-image:
+        radial-gradient(circle at 15% 50%, rgba(0, 82, 204, 0.05) 0%, transparent 30%),
+        radial-gradient(circle at 85% 30%, rgba(0, 145, 234, 0.05) 0%, transparent 30%);
+}
+
+body.light-theme #particles-js {
+    background: linear-gradient(135deg, #eef2f8 0%, #dde6f2 100%);
+}
+
+body.light-theme .main-content {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+body.light-theme .dashboard-card,
+body.light-theme .stat-card {
+    background: rgba(255, 255, 255, 0.85);
+}
+
+body.light-theme .news-category,
+body.light-theme .article-category,
+body.light-theme .primary-button {
+    color: #ffffff;
+}
+
+/* Keep the animated grid colour in sync with the active theme */
+.cyber-grid {
+    background-image:
+        linear-gradient(var(--grid-color) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+}
+
+/* ---------- Theme picker pop-over ---------- */
+.theme-menu {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 0.5rem;
+    display: none;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-width: 190px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+    z-index: 1500;
+    animation: modalFadeIn 0.25s ease-out;
+}
+
+.theme-menu.open {
+    display: flex;
+}
+
+.theme-option {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.55rem 0.75rem;
+    border-radius: 6px;
+    cursor: pointer;
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    background: none;
+    border: none;
+    text-align: left;
+    width: 100%;
+    transition: all 0.2s ease;
+}
+
+.theme-option:hover {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+}
+
+.theme-option.active {
+    color: var(--primary-color);
+    background: var(--bg-tertiary);
+}
+
+.theme-swatch {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: 0 0 8px currentColor;
+}
+
+.theme-swatch.cyber   { background: #0066ff; color: #0066ff; }
+.theme-swatch.matrix  { background: #00ff7f; color: #00ff7f; }
+.theme-swatch.crimson { background: #ff2d55; color: #ff2d55; }
+.theme-swatch.light   { background: #f0f4fa; color: #88aadd; }
+
+.theme-switcher {
+    position: relative;
+}

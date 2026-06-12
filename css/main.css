@@ -36,6 +36,11 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-main);
     background-color: var(--bg-primary);
@@ -300,16 +305,32 @@ a:hover {
     margin-bottom: 2rem;
 }
 
+/* A bounded track (overflow:hidden) holds a glow that sweeps via
+   transform — no layout reflow and no horizontal page overflow,
+   which also fixes the language modal drifting on mobile. */
 .cyber-scanner {
     position: absolute;
     bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
-    width: 300px;
+    width: min(300px, 70vw);
     height: 2px;
+    border-radius: 2px;
+    overflow: hidden;
+    background: rgba(0, 102, 255, 0.12);
+}
+
+.cyber-scanner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 45%;
     background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
-    box-shadow: 0 0 20px var(--primary-color);
-    animation: scan 3s infinite linear;
+    box-shadow: 0 0 12px var(--primary-color);
+    animation: scan 2.8s infinite linear;
+    will-change: transform;
 }
 
 .intro-actions {
@@ -942,20 +963,26 @@ a:hover {
 }
 
 /* Buttons */
-.button {
+.button,
+.primary-button,
+.secondary-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
     padding: 0.75rem 1.5rem;
-    border-radius: 4px;
+    border-radius: 6px;
     font-family: var(--font-main);
     font-weight: 600;
+    font-size: 0.95rem;
     cursor: pointer;
     transition: all var(--transition-speed);
-    border: none;
+    border: 1px solid transparent;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
 }
 
 .primary-button {
@@ -1359,8 +1386,8 @@ a:hover {
 }
 
 @keyframes scan {
-    0% { left: -100%; }
-    100% { left: 200%; }
+    0%   { transform: translateX(-110%); }
+    100% { transform: translateX(240%); }
 }
 
 @keyframes shine {
@@ -1475,4 +1502,224 @@ a:hover {
     .alerts-actions button {
         width: 100%;
     }
+}
+
+/* ============================================================
+   ENHANCEMENTS — added during the v0.2 overhaul
+   ============================================================ */
+
+/* --- Dark, theme-aware form controls (selects, options, textareas) --- */
+select,
+.filter-group select,
+#threat-time-filter,
+.contact-form select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 0.6rem 2.2rem 0.6rem 0.9rem;
+    font-family: var(--font-main);
+    cursor: pointer;
+    background-image:
+        linear-gradient(45deg, transparent 50%, var(--primary-color) 50%),
+        linear-gradient(135deg, var(--primary-color) 50%, transparent 50%);
+    background-position:
+        calc(100% - 18px) 50%,
+        calc(100% - 13px) 50%;
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+    transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px var(--glow);
+}
+
+select option {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+/* --- Form validation states --- */
+.form-group input.invalid,
+.form-group textarea.invalid,
+.contact-form input.invalid,
+.contact-form textarea.invalid,
+.newsletter-form input.invalid {
+    border-color: var(--danger-color) !important;
+    box-shadow: 0 0 0 2px rgba(255, 56, 96, 0.2);
+}
+
+.field-error {
+    display: block;
+    color: var(--danger-color);
+    font-size: 0.78rem;
+    margin-top: 0.35rem;
+    font-family: var(--font-mono);
+}
+
+/* --- S.O.W.A owl emblem in the logo --- */
+.logo-icon .owl-emblem {
+    width: 2.4rem;
+    height: 2.4rem;
+    filter: drop-shadow(0 0 6px var(--glow));
+}
+
+.logo-icon .owl-emblem .owl-body { fill: none; stroke: var(--primary-color); stroke-width: 5; }
+.logo-icon .owl-emblem .owl-fill { fill: var(--primary-color); }
+.logo-icon .owl-emblem .owl-pupil { fill: var(--bg-primary); }
+
+/* --- Live status badge --- */
+.live-badge {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    color: var(--success-color);
+    text-transform: uppercase;
+}
+
+/* --- Header scrolled state --- */
+.main-header.scrolled {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+    background-color: var(--bg-secondary);
+}
+
+/* --- Nav-link hover underline (not just active) --- */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover { color: var(--primary-color); }
+.nav-link:hover::after { width: 100%; }
+.nav-link.active::after { width: 100%; }
+
+/* --- Mobile nav toggle (hamburger) --- */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+/* --- Scroll progress bar --- */
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+    z-index: 2000;
+    box-shadow: 0 0 10px var(--glow);
+    transition: width 0.1s linear;
+}
+
+/* --- Back-to-top button --- */
+#back-to-top {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: var(--bg-secondary);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 1500;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+#back-to-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+#back-to-top:hover { background: var(--primary-color); color: #fff; box-shadow: 0 0 18px var(--glow); }
+
+/* --- Threat-map tooltip host --- */
+#world-map { position: relative; }
+
+/* --- Map legend / world map polish --- */
+.map-container { background: radial-gradient(circle at 50% 50%, var(--bg-tertiary), var(--bg-primary)); }
+
+/* --- Account / logged-in chip --- */
+.user-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--primary-color);
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    font-family: var(--font-mono);
+}
+
+.user-chip i { color: var(--primary-color); }
+
+/* --- Empty-state row for filtered tables --- */
+.empty-row td {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 2rem;
+    font-style: italic;
+}
+
+/* --- Mobile navigation drawer --- */
+@media (max-width: 900px) {
+    .nav-toggle { display: block; order: 3; }
+
+    .header-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .main-nav {
+        order: 4;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+    }
+
+    .main-nav.open { max-height: 480px; }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 0.25rem;
+        padding: 0.75rem 0;
+    }
+
+    .main-nav li { width: 100%; }
+
+    .nav-link {
+        display: block;
+        padding: 0.75rem 0.5rem;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .user-controls { order: 2; }
 }

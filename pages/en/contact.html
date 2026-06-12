@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Oxanium:wght@300;400;600;700&family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" href="../../images/logo-icon.png" type="image/png">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMwYTBhMWEiLz48cGF0aCBkPSJNMTggMTQgTDI0IDI0IEwxMyAyMiBaIiBmaWxsPSIjMDA2NmZmIi8+PHBhdGggZD0iTTQ2IDE0IEw0MCAyNCBMNTEgMjIgWiIgZmlsbD0iIzAwNjZmZiIvPjxwYXRoIGQ9Ik0zMiA5IEM0NiA5IDUzIDIxIDUzIDM0IEM1MyA0OCA0NCA1NyAzMiA1NyBDMjAgNTcgMTEgNDggMTEgMzQgQzExIDIxIDE4IDkgMzIgOSBaIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDY2ZmYiIHN0cm9rZS13aWR0aD0iNSIvPjxjaXJjbGUgY3g9IjI0IiBjeT0iMzAiIHI9IjgiIGZpbGw9IiMwMDY2ZmYiLz48Y2lyY2xlIGN4PSI0MCIgY3k9IjMwIiByPSI4IiBmaWxsPSIjMDA2NmZmIi8+PGNpcmNsZSBjeD0iMjQiIGN5PSIzMCIgcj0iMy40IiBmaWxsPSIjMGEwYTFhIi8+PGNpcmNsZSBjeD0iNDAiIGN5PSIzMCIgcj0iMy40IiBmaWxsPSIjMGEwYTFhIi8+PHBhdGggZD0iTTMyIDM2IEwyOCA0MC41IEwzNiA0MC41IFoiIGZpbGw9IiMwMDY2ZmYiLz48L3N2Zz4=">
 </head>
 <body class="cyber-theme">
     <div id="particles-js"></div>
@@ -28,8 +28,16 @@
         <div class="header-container">
             <div class="logo-container">
                 <div class="logo-icon">
-                    <i class="fas fa-shield-alt"></i>
-                    <div class="pulse-effect"></div>
+                    <svg class="owl-emblem" viewBox="0 0 64 64" role="img" aria-label="S.O.W.A owl emblem">
+                        <path class="owl-fill" d="M18 14 L24 24 L13 22 Z"/>
+                        <path class="owl-fill" d="M46 14 L40 24 L51 22 Z"/>
+                        <path class="owl-body" d="M32 9 C46 9 53 21 53 34 C53 48 44 57 32 57 C20 57 11 48 11 34 C11 21 18 9 32 9 Z"/>
+                        <circle class="owl-fill owl-eye" cx="24" cy="30" r="8"/>
+                        <circle class="owl-fill owl-eye right" cx="40" cy="30" r="8"/>
+                        <circle class="owl-pupil" cx="24" cy="30" r="3.4"/>
+                        <circle class="owl-pupil" cx="40" cy="30" r="3.4"/>
+                        <path class="owl-fill" d="M32 36 L28 40.5 L36 40.5 Z"/>
+                    </svg>
                 </div>
                 <div class="logo-text">
                     <span class="logo-primary">CLEAR NET SKY</span>
@@ -51,11 +59,14 @@
             <div class="user-controls">
                 <div class="language-switcher">
                     <button id="current-language" class="icon-button">
-                        <div class="flag en-flag small"></div>
+                        <div class="flag us-flag small"></div>
                     </button>
                 </div>
-                <button id="sound-toggle" class="icon-button">
+                <button id="sound-toggle" class="icon-button" title="Toggle sound">
                     <i class="fas fa-volume-up"></i>
+                </button>
+                <button id="theme-toggle" class="icon-button" title="Change theme">
+                    <i class="fas fa-palette"></i>
                 </button>
             </div>
         </div>
@@ -89,7 +100,7 @@
                         </div>
                         <div class="info-content">
                             <h4>Phone</h4>
-                            <p><a href="tel:Coming Soon">Coming Soon</a></p>
+                            <p><a href="#">Coming Soon</a></p>
                         </div>
                     </div>
                     <div class="info-item">
@@ -105,7 +116,7 @@
 							<a href="https://www.youtube.com/@Aristarh.Ucolov" class="social-link"><i class="fab fa-youtube"></i></a>
 							<a href="https://www.linkedin.com/in/aristarhucolov" class="social-link"><i class="fab fa-linkedin"></i></a>
 							<a href="https://github.com/AristarhUcolov" class="social-link"><i class="fab fa-github"></i></a>
-							<a href="https://www.twitter.com/AristarhUcolov" class="social-link"><i class="fab fa-x"></i></a>
+							<a href="https://www.twitter.com/AristarhUcolov" class="social-link"><i class="fab fa-x-twitter"></i></a>
                     </div>
                 </div>
 
@@ -155,12 +166,14 @@
             <div class="emergency-contact">
                 <h3>Emergency Assistance</h3>
                 <p>If you are experiencing a cyber attack or suspect your systems have been compromised, contact our rapid response team immediately.</p>
-                <a href="tel:Coming Soon" class="emergency-link">Coming Soon</a>
+                <a href="#" class="emergency-link">Coming Soon</a>
             </div>
 
-            <!-- Map Container -->
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d950.889170028318!2d21.736623!3d-76.212066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNzbCsDEyJzQzLjQiUyAyMcKwNDQnMTEuOCJF!5e0!3m2!1sru!2s!4v1756776391815!5m2!1sru!2s" width="100%" height="400" frameborder="0"></iframe>
+            <!-- Global Operations -->
+            <div class="map-container" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:0.85rem;padding:2rem;">
+                <i class="fas fa-earth-americas" style="font-size:3.2rem;color:var(--primary-color);filter:drop-shadow(0 0 12px var(--glow));"></i>
+                <h3 style="color:var(--text-primary);margin:0;">Global · Remote-First Operations</h3>
+                <p style="color:var(--text-secondary);max-width:520px;margin:0;line-height:1.6;">S.O.W.A operates as a distributed security division without a single fixed location. Our analysts coordinate worldwide and respond around the clock — reach us through any channel above.</p>
             </div>
         </section>
     </main>
@@ -175,7 +188,7 @@
                     <a href="https://www.youtube.com/@Aristarh.Ucolov" class="social-link"><i class="fab fa-youtube"></i></a>
                     <a href="https://www.linkedin.com/in/aristarhucolov" class="social-link"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/AristarhUcolov" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="https://www.twitter.com/AristarhUcolov" class="social-link"><i class="fab fa-x"></i></a>
+                    <a href="https://www.twitter.com/AristarhUcolov" class="social-link"><i class="fab fa-x-twitter"></i></a>
                 </div>
             </div>
             <div class="footer-section">
@@ -199,7 +212,7 @@
                 <h4 data-i18n="contact-us">Contact Us</h4>
                 <ul>
                     <li><i class="fas fa-envelope"></i> <a href="mailto:aristarh.ucolov@gmail.com">aristarh.ucolov@gmail.com</a></li>
-                    <li><i class="fas fa-phone"></i> <a href="tel:Coming Soon">Coming Soon</a></li>
+                    <li><i class="fas fa-phone"></i> <a href="#">Coming Soon</a></li>
                 </ul>
             </div>
         </div>

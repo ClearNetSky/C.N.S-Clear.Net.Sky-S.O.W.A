@@ -1,0 +1,259 @@
+/* ============================================================
+   animations.css — motion layer for Clear Net Sky / S.O.W.A
+   Scroll reveals, spinners, toasts, the live threat map and the
+   ambient cyber effects referenced from the JavaScript layer.
+   ============================================================ */
+
+/* ---------- Scroll-reveal (added by IntersectionObserver) ---------- */
+.dashboard-card,
+.stat-card,
+.news-item,
+.service-card,
+.team-member,
+.value-item,
+.timeline-item,
+.news-article {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Defined after the hidden state above (equal specificity) so it wins,
+   while the higher-specificity :hover lift on cards still applies. */
+.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Honour users who prefer no motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+    .dashboard-card,
+    .stat-card,
+    .news-item,
+    .service-card,
+    .team-member,
+    .value-item,
+    .timeline-item,
+    .news-article {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* ---------- Spinner (refresh buttons) ---------- */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+.spinning { animation: spin 1s linear infinite; }
+
+/* ---------- Toast / notification system ---------- */
+#toast-container {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    z-index: 5000;
+    max-width: min(360px, calc(100vw - 3rem));
+}
+
+.toast {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    background: var(--bg-secondary, #0e1226);
+    border: 1px solid var(--border-color, #243056);
+    border-left: 4px solid var(--primary-color, #0066ff);
+    border-radius: 8px;
+    padding: 0.9rem 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+    color: var(--text-primary, #f4f8ff);
+    font-size: 0.9rem;
+    transform: translateX(120%);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.4s ease;
+}
+
+.toast.show { transform: translateX(0); opacity: 1; }
+.toast.hide { transform: translateX(120%); opacity: 0; }
+
+.toast i { font-size: 1.15rem; margin-top: 0.1rem; }
+.toast .toast-body { flex: 1; line-height: 1.4; }
+.toast .toast-title { font-weight: 700; margin-bottom: 0.15rem; }
+.toast .toast-close {
+    background: none; border: none; color: var(--text-muted, #6c7a92);
+    cursor: pointer; font-size: 1rem; padding: 0; line-height: 1;
+}
+.toast .toast-close:hover { color: var(--text-primary, #fff); }
+
+.toast.success { border-left-color: var(--success-color, #23d160); }
+.toast.success i { color: var(--success-color, #23d160); }
+.toast.error   { border-left-color: var(--danger-color, #ff3860); }
+.toast.error i { color: var(--danger-color, #ff3860); }
+.toast.warning { border-left-color: var(--warning-color, #ffdd57); }
+.toast.warning i { color: var(--warning-color, #ffdd57); }
+.toast.info    { border-left-color: var(--info-color, #209cee); }
+.toast.info i  { color: var(--info-color, #209cee); }
+
+/* ---------- Live threat map ---------- */
+.threat-point {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 3;
+}
+
+.threat-point::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: inherit;
+    animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes ping {
+    0%   { transform: scale(1);   opacity: 0.7; }
+    80%, 100% { transform: scale(3.2); opacity: 0; }
+}
+
+.threat-point[data-severity="high"]   { background: var(--danger-color, #ff3860); box-shadow: 0 0 12px var(--danger-color, #ff3860); }
+.threat-point[data-severity="medium"] { background: var(--warning-color, #ffdd57); box-shadow: 0 0 12px var(--warning-color, #ffdd57); }
+.threat-point[data-severity="low"]    { background: var(--info-color, #209cee); box-shadow: 0 0 12px var(--info-color, #209cee); }
+
+/* Attack arc that sweeps across the world map */
+.attack-arc {
+    stroke-dasharray: 6 200;
+    animation: arc-travel 2.4s linear infinite;
+}
+
+@keyframes arc-travel {
+    from { stroke-dashoffset: 206; }
+    to   { stroke-dashoffset: 0; }
+}
+
+.map-svg { width: 100%; height: 100%; display: block; }
+.map-svg .land {
+    fill: rgba(0, 102, 255, 0.08);
+    stroke: var(--primary-color, #0066ff);
+    stroke-width: 0.4;
+    stroke-opacity: 0.35;
+}
+
+/* Tooltip for threat points */
+.map-tooltip {
+    position: absolute;
+    background: var(--bg-secondary, #0e1226);
+    border: 1px solid var(--primary-color, #0066ff);
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.75rem;
+    color: var(--text-primary, #fff);
+    pointer-events: none;
+    white-space: nowrap;
+    transform: translate(-50%, -130%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 10;
+}
+
+.map-tooltip.show { opacity: 1; }
+
+/* ---------- Owl emblem (S.O.W.A) ---------- */
+.owl-eye { transform-box: fill-box; transform-origin: center; animation: blink 5s infinite; }
+.owl-eye.right { animation-delay: 0.08s; }
+
+@keyframes blink {
+    0%, 92%, 100% { transform: scaleY(1); }
+    95%           { transform: scaleY(0.1); }
+}
+
+/* ---------- Typing / scanline ambience ---------- */
+.scanline {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(0, 102, 255, 0.03) 50%,
+        transparent 100%
+    );
+    background-size: 100% 6px;
+    opacity: 0.35;
+    animation: scanlines 8s linear infinite;
+}
+
+@keyframes scanlines {
+    from { background-position: 0 0; }
+    to   { background-position: 0 100%; }
+}
+
+/* Blinking live indicator dot */
+@keyframes live-blink {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0.25; }
+}
+
+.live-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--success-color, #23d160);
+    box-shadow: 0 0 8px var(--success-color, #23d160);
+    animation: live-blink 1.4s infinite;
+    margin-right: 0.4rem;
+}
+
+/* Count-up flash when a stat updates */
+@keyframes value-flash {
+    0%   { color: var(--accent-color, #00ff9d); transform: scale(1.12); }
+    100% { color: inherit; transform: scale(1); }
+}
+
+.value-flash { animation: value-flash 0.6s ease; }
+
+/* Button ripple */
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(0);
+    animation: ripple-spread 0.6s linear;
+    pointer-events: none;
+}
+
+@keyframes ripple-spread {
+    to { transform: scale(4); opacity: 0; }
+}
+
+/* Pulsing call-to-action button */
+.pulse {
+    animation: cta-pulse 2.2s infinite;
+}
+
+@keyframes cta-pulse {
+    0%   { box-shadow: 0 0 0 0 var(--glow, rgba(0, 102, 255, 0.45)); }
+    70%  { box-shadow: 0 0 0 14px rgba(0, 102, 255, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(0, 102, 255, 0); }
+}
