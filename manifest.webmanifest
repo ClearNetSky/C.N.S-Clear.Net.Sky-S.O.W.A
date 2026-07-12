@@ -1,0 +1,17 @@
+{
+  "name": "Clear Net Sky — S.O.W.A Security",
+  "short_name": "C.N.S",
+  "description": "Advanced cyber security for the civilian population. The Owl Never Sleeps.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#070a13",
+  "theme_color": "#070a13",
+  "icons": [
+    {
+      "src": "images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

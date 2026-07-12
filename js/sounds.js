@@ -19,7 +19,9 @@ class SoundManager {
             background: document.getElementById('background-music')
         };
 
-        this.soundEnabled = true;
+        // Sound is opt-in: a professional default is silence, and the
+        // toggle in the header lets returning fans switch it back on.
+        this.soundEnabled = false;
         this.volume = 0.3;
 
         this.init();

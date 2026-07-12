@@ -13,17 +13,9 @@ class AnimationManager {
     }
     
     setupEventListeners() {
-        // Add hover animations to interactive elements
-        document.querySelectorAll('.dashboard-card, .stat-card, .news-item, .team-member, .value-item').forEach(element => {
-            element.addEventListener('mouseenter', () => {
-                this.addHoverAnimation(element);
-            });
-            
-            element.addEventListener('mouseleave', () => {
-                this.removeHoverAnimation(element);
-            });
-        });
-        
+        // Card hover lift/shadow is handled purely in CSS (main.css) so it
+        // always matches the active theme — no inline styles here.
+
         // Add click animations to buttons
         document.querySelectorAll('.button, .icon-button').forEach(button => {
             button.addEventListener('click', (e) => {
@@ -56,17 +48,6 @@ class AnimationManager {
                 }, 1000);
             });
         }
-    }
-    
-    addHoverAnimation(element) {
-        element.style.transform = 'translateY(-5px)';
-        element.style.boxShadow = '0 10px 20px rgba(0, 102, 255, 0.2)';
-        element.style.transition = 'all 0.3s ease';
-    }
-    
-    removeHoverAnimation(element) {
-        element.style.transform = '';
-        element.style.boxShadow = '';
     }
     
     addClickAnimation(element) {

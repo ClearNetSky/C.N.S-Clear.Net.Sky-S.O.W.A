@@ -77,10 +77,10 @@ function isValidEmail(value) {
 const ThemeManager = {
     themes: ['cyber-theme', 'matrix-theme', 'crimson-theme', 'light-theme'],
     labels: {
-        'cyber-theme': 'Cyber Blue',
-        'matrix-theme': 'Matrix Green',
-        'crimson-theme': 'Crimson Alert',
-        'light-theme': 'Day Ops'
+        'cyber-theme': 'Midnight',
+        'matrix-theme': 'Emerald',
+        'crimson-theme': 'Crimson',
+        'light-theme': 'Daylight'
     },
     swatch: { 'cyber-theme': 'cyber', 'matrix-theme': 'matrix', 'crimson-theme': 'crimson', 'light-theme': 'light' },
 
@@ -375,6 +375,11 @@ function setupLogin() {
 function setupContactForm() {
     const form = document.querySelector('.contact-form form');
     if (!form) return;
+
+    // A real endpoint (Formspree / Web3Forms) can be configured via the
+    // form's data-endpoint attribute; without one the send is simulated.
+    const endpoint = (form.dataset.endpoint || '').trim();
+
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         const name = form.querySelector('#name');
@@ -388,17 +393,61 @@ function setupContactForm() {
         const original = submit.textContent;
         submit.disabled = true;
         submit.textContent = '...';
-        setTimeout(() => {
+
+        const finish = (ok) => {
             submit.disabled = false;
             submit.textContent = original;
-            form.reset();
-            Toast.show(tr('msg-message-sent', 'Message transmitted.'), 'success');
-        }, 900);
+            if (ok) {
+                form.reset();
+                Toast.show(tr('msg-message-sent', 'Message transmitted.'), 'success');
+            } else {
+                Toast.show(tr('msg-message-error', 'Could not send — please email us directly.'), 'error');
+            }
+        };
+
+        if (endpoint) {
+            fetch(endpoint, {
+                method: 'POST',
+                headers: { 'Accept': 'application/json' },
+                body: new FormData(form)
+            })
+                .then(r => finish(r.ok))
+                .catch(() => finish(false));
+        } else {
+            setTimeout(() => finish(true), 900); // demo mode
+        }
     });
 
     // Clear errors as the user types
     form.querySelectorAll('input, textarea').forEach(f =>
         f.addEventListener('input', () => clearInvalid(f)));
+}
+
+/* ---------------------------------------------------------------
+   Hover prefetch — starts loading an internal page the moment the
+   cursor touches its link, so the actual navigation feels instant.
+   --------------------------------------------------------------- */
+function setupPrefetch() {
+    const seen = new Set();
+    const prefetch = (a) => {
+        const href = a.getAttribute('href');
+        if (!href || href.startsWith('#') || /^(https?:|mailto:|tel:)/i.test(href)) return;
+        const url = new URL(href, window.location.href).href;
+        if (seen.has(url) || url === window.location.href) return;
+        seen.add(url);
+        const link = document.createElement('link');
+        link.rel = 'prefetch';
+        link.href = url;
+        document.head.appendChild(link);
+    };
+    document.addEventListener('mouseover', (e) => {
+        const a = e.target.closest && e.target.closest('a[href]');
+        if (a) prefetch(a);
+    }, { passive: true });
+    document.addEventListener('touchstart', (e) => {
+        const a = e.target.closest && e.target.closest('a[href]');
+        if (a) prefetch(a);
+    }, { passive: true });
 }
 
 /* ---------------------------------------------------------------
@@ -472,6 +521,7 @@ document.addEventListener('DOMContentLoaded', () => {
     startClock();
     setupLogin();
     setupContactForm();
+    setupPrefetch();
     setupPlaceholderLinks();
     setupReveal();
     attachRipples();
@@ -480,6 +530,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Re-render auth labels when language changes
     document.addEventListener('languagechange', () => Auth.render());
 
-    console.log('%cC.N.S — Clear Net Sky / S.O.W.A', 'color:#0066ff;font-weight:bold;font-size:14px;');
-    console.log('%cThe Owl Never Sleeps · System Online', 'color:#00ff9d;');
+    console.log('%cC.N.S — Clear Net Sky / S.O.W.A', 'color:#4c8dff;font-weight:bold;font-size:14px;');
+    console.log('%cThe Owl Never Sleeps · System Online', 'color:#34d399;');
 });

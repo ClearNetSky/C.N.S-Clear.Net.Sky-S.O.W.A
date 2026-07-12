@@ -1,0 +1,5 @@
+Contact: mailto:aristarh.ucolov@gmail.com
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: en, ru
+Canonical: https://clearnetsky.github.io/C.N.S-Clear.Net.Sky-S.O.W.A/.well-known/security.txt
+Policy: https://clearnetsky.github.io/C.N.S-Clear.Net.Sky-S.O.W.A/pages/en/contact.html

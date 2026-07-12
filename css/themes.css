@@ -1,7 +1,7 @@
 /* ============================================================
    themes.css — Theme engine for Clear Net Sky / S.O.W.A
-   Multiple selectable colour schemes applied via <body> class.
-   The default scheme (Cyber Blue) lives in :root inside main.css;
+   Selectable colour schemes applied via a <body> class.
+   The default scheme (Midnight) lives in :root inside main.css;
    the classes below override those custom properties.
    ============================================================ */
 
@@ -23,127 +23,124 @@ body,
         box-shadow 0.4s ease;
 }
 
-/* ---------- 1. CYBER BLUE (default / dark) ---------- */
+/* ---------- 1. MIDNIGHT (default / dark blue) ---------- */
 body.cyber-theme {
-    --primary-color: #0066ff;
-    --primary-light: #4d94ff;
-    --primary-dark: #0047b3;
-    --secondary-color: #00b4ff;
-    --secondary-light: #66d1ff;
-    --secondary-dark: #0080cc;
-    --accent-color: #00ff9d;
+    --primary-color: #4c8dff;
+    --primary-light: #7fb0ff;
+    --primary-dark: #2e6bdf;
+    --secondary-color: #38bdf8;
+    --secondary-light: #7dd3fc;
+    --secondary-dark: #0ea5e9;
+    --accent-color: #34d399;
 
-    --text-primary: #f4f8ff;
-    --text-secondary: #aab8cc;
-    --text-muted: #6c7a92;
+    --text-primary: #f1f5fb;
+    --text-secondary: #a6b3c9;
+    --text-muted: #64718a;
 
-    --bg-primary: #060814;
-    --bg-secondary: #0e1226;
-    --bg-tertiary: #161b33;
-    --bg-quaternary: #222a4a;
+    --bg-primary: #070a13;
+    --bg-secondary: #0c111c;
+    --bg-tertiary: #121828;
+    --bg-quaternary: #1a2234;
 
-    --border-color: #243056;
-    --glow: rgba(0, 102, 255, 0.45);
-    --grid-color: rgba(0, 102, 255, 0.10);
+    --border-color: #1e2740;
+    --glow: rgba(76, 141, 255, 0.35);
+    --grid-color: rgba(76, 141, 255, 0.05);
 }
 
-/* ---------- 2. MATRIX GREEN ---------- */
+/* ---------- 2. EMERALD (dark green ops) ---------- */
 body.matrix-theme {
-    --primary-color: #00ff7f;
-    --primary-light: #66ffb2;
-    --primary-dark: #00b359;
-    --secondary-color: #00e676;
-    --secondary-light: #69f0ae;
-    --secondary-dark: #00a152;
-    --accent-color: #aaff00;
+    --primary-color: #2fd48b;
+    --primary-light: #6ee7b7;
+    --primary-dark: #0f9d63;
+    --secondary-color: #22d3ee;
+    --secondary-light: #67e8f9;
+    --secondary-dark: #0891b2;
+    --accent-color: #a3e635;
 
-    --text-primary: #e6ffe6;
-    --text-secondary: #8fd9a8;
-    --text-muted: #5c8a6c;
+    --text-primary: #ecfdf5;
+    --text-secondary: #9cbfae;
+    --text-muted: #5e7d6c;
 
-    --bg-primary: #02100a;
-    --bg-secondary: #04190f;
-    --bg-tertiary: #08251a;
-    --bg-quaternary: #0d3526;
+    --bg-primary: #05100b;
+    --bg-secondary: #081810;
+    --bg-tertiary: #0d2318;
+    --bg-quaternary: #143324;
 
-    --border-color: #14512f;
-    --glow: rgba(0, 255, 127, 0.45);
-    --grid-color: rgba(0, 255, 127, 0.10);
+    --border-color: #1a3a2a;
+    --glow: rgba(47, 212, 139, 0.32);
+    --grid-color: rgba(47, 212, 139, 0.05);
 }
 
-/* ---------- 3. CRIMSON ALERT ---------- */
+/* ---------- 3. CRIMSON (dark red alert) ---------- */
 body.crimson-theme {
-    --primary-color: #ff2d55;
-    --primary-light: #ff6b85;
-    --primary-dark: #c30f33;
-    --secondary-color: #ff7849;
-    --secondary-light: #ffa07a;
-    --secondary-dark: #cc4a1f;
-    --accent-color: #ffd000;
+    --primary-color: #f5566f;
+    --primary-light: #fb8a9c;
+    --primary-dark: #d02a48;
+    --secondary-color: #fb923c;
+    --secondary-light: #fdba74;
+    --secondary-dark: #ea680c;
+    --accent-color: #fbbf24;
 
-    --text-primary: #fff0f2;
-    --text-secondary: #e0a9b1;
-    --text-muted: #966069;
+    --text-primary: #fdf2f4;
+    --text-secondary: #c7a2ab;
+    --text-muted: #86616a;
 
-    --bg-primary: #120407;
-    --bg-secondary: #1d070d;
-    --bg-tertiary: #2a0c15;
-    --bg-quaternary: #3d1320;
+    --bg-primary: #100609;
+    --bg-secondary: #1a0a0f;
+    --bg-tertiary: #251016;
+    --bg-quaternary: #351822;
 
-    --border-color: #56202f;
-    --glow: rgba(255, 45, 85, 0.45);
-    --grid-color: rgba(255, 45, 85, 0.10);
+    --border-color: #3e1e2a;
+    --glow: rgba(245, 86, 111, 0.32);
+    --grid-color: rgba(245, 86, 111, 0.05);
 }
 
-/* ---------- 4. LIGHT / DAY OPS ---------- */
+/* ---------- 4. DAYLIGHT (clean light) ---------- */
 body.light-theme {
-    --primary-color: #0052cc;
-    --primary-light: #3b7dd8;
-    --primary-dark: #003d99;
-    --secondary-color: #0091ea;
-    --secondary-light: #4fc3f7;
-    --secondary-dark: #006db3;
-    --accent-color: #00a86b;
+    --primary-color: #2563eb;
+    --primary-light: #3b82f6;
+    --primary-dark: #1d4ed8;
+    --secondary-color: #0284c7;
+    --secondary-light: #38bdf8;
+    --secondary-dark: #0369a1;
+    --accent-color: #059669;
 
-    --text-primary: #0d1b2a;
-    --text-secondary: #38465a;
-    --text-muted: #6b7a8d;
+    --text-primary: #0f172a;
+    --text-secondary: #46536b;
+    --text-muted: #7c899e;
 
-    --bg-primary: #eef2f8;
+    --bg-primary: #f4f6fb;
     --bg-secondary: #ffffff;
-    --bg-tertiary: #e3eaf3;
-    --bg-quaternary: #d3deee;
+    --bg-tertiary: #eaeef6;
+    --bg-quaternary: #dde4f0;
 
-    --border-color: #c4d0e0;
-    --shadow-color: rgba(13, 27, 42, 0.12);
-    --glow: rgba(0, 82, 204, 0.25);
-    --grid-color: rgba(0, 82, 204, 0.06);
+    --border-color: #d7deeb;
+    --shadow-color: rgba(15, 23, 42, 0.08);
+    --glow: rgba(37, 99, 235, 0.2);
+    --grid-color: rgba(37, 99, 235, 0.04);
+    --shadow-card: 0 1px 2px rgba(15, 23, 42, 0.06);
+    --shadow-lift: 0 16px 40px -16px rgba(15, 23, 42, 0.18);
 }
 
 /* Light theme readability tweaks */
-body.light-theme {
-    background-image:
-        radial-gradient(circle at 15% 50%, rgba(0, 82, 204, 0.05) 0%, transparent 30%),
-        radial-gradient(circle at 85% 30%, rgba(0, 145, 234, 0.05) 0%, transparent 30%);
-}
-
 body.light-theme #particles-js {
-    background: linear-gradient(135deg, #eef2f8 0%, #dde6f2 100%);
+    background: linear-gradient(160deg, #f4f6fb 0%, #e8edf7 100%);
 }
 
-body.light-theme .main-content {
-    background: rgba(255, 255, 255, 0.7);
-}
-
-body.light-theme .dashboard-card,
-body.light-theme .stat-card {
-    background: rgba(255, 255, 255, 0.85);
+body.light-theme ::selection {
+    background: var(--primary-light);
+    color: #fff;
 }
 
 body.light-theme .news-category,
 body.light-theme .article-category,
 body.light-theme .primary-button {
     color: #ffffff;
+}
+
+body.light-theme .news-category {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: var(--primary-dark);
 }
 
 /* Keep the animated grid colour in sync with the active theme */
@@ -156,35 +153,34 @@ body.light-theme .primary-button {
 /* ---------- Theme picker pop-over ---------- */
 .theme-menu {
     position: absolute;
-    top: 110%;
+    top: calc(100% + 8px);
     right: 0;
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
-    border-radius: 10px;
-    padding: 0.5rem;
+    border-radius: 12px;
+    padding: 0.4rem;
     display: none;
     flex-direction: column;
-    gap: 0.25rem;
-    min-width: 190px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+    gap: 0.15rem;
+    min-width: 180px;
+    box-shadow: var(--shadow-lift, 0 12px 30px rgba(0, 0, 0, 0.45));
     z-index: 1500;
-    animation: modalFadeIn 0.25s ease-out;
+    animation: modalFadeIn 0.2s ease-out;
 }
 
-.theme-menu.open {
-    display: flex;
-}
+.theme-menu.open { display: flex; }
 
 .theme-option {
     display: flex;
     align-items: center;
     gap: 0.65rem;
     padding: 0.55rem 0.75rem;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     color: var(--text-secondary);
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
+    font-family: var(--font-main);
+    font-size: 0.87rem;
+    font-weight: 500;
     background: none;
     border: none;
     text-align: left;
@@ -198,23 +194,21 @@ body.light-theme .primary-button {
 }
 
 .theme-option.active {
-    color: var(--primary-color);
+    color: var(--text-primary);
     background: var(--bg-tertiary);
 }
 
 .theme-swatch {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     flex-shrink: 0;
-    box-shadow: 0 0 8px currentColor;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
 }
 
-.theme-swatch.cyber   { background: #0066ff; color: #0066ff; }
-.theme-swatch.matrix  { background: #00ff7f; color: #00ff7f; }
-.theme-swatch.crimson { background: #ff2d55; color: #ff2d55; }
-.theme-swatch.light   { background: #f0f4fa; color: #88aadd; }
+.theme-swatch.cyber   { background: #4c8dff; }
+.theme-swatch.matrix  { background: #2fd48b; }
+.theme-swatch.crimson { background: #f5566f; }
+.theme-swatch.light   { background: #f0f4fa; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2); }
 
-.theme-switcher {
-    position: relative;
-}
+.theme-switcher { position: relative; }

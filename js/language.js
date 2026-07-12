@@ -216,8 +216,8 @@ class LanguageManager {
 
         // Friendly theme names for toast feedback
         this.themeNames = {
-            'en': { 'cyber-theme': 'Cyber Blue', 'matrix-theme': 'Matrix Green', 'crimson-theme': 'Crimson Alert', 'light-theme': 'Day Ops' },
-            'ru': { 'cyber-theme': 'Кибер-синяя', 'matrix-theme': 'Матрица', 'crimson-theme': 'Багровая тревога', 'light-theme': 'Дневная' }
+            'en': { 'cyber-theme': 'Midnight', 'matrix-theme': 'Emerald', 'crimson-theme': 'Crimson', 'light-theme': 'Daylight' },
+            'ru': { 'cyber-theme': 'Полночь', 'matrix-theme': 'Изумруд', 'crimson-theme': 'Багровая', 'light-theme': 'Дневная' }
         };
     }
 

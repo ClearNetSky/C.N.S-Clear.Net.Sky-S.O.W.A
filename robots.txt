@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clearnetsky.github.io/C.N.S-Clear.Net.Sky-S.O.W.A/sitemap.xml
