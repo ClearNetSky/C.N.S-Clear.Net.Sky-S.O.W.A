@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>C.N.S — Clear Net Sky | Security News</title>
+  <link>https://clearnetsky.github.io/C.N.S-Clear.Net.Sky-S.O.W.A/pages/en/news.html</link>
+  <description>Security news, threat alerts and research from the Clear Net Sky (S.O.W.A) team.</description>
+  <language>en</language>
+  <item>
+    <title>S.O.W.A Platform v0.3: Interface Overhaul</title>
+    <link>https://clearnetsky.github.io/C.N.S-Clear.Net.Sky-S.O.W.A/pages/en/news.html#sowa-v03-interface-overhaul</link>
+    <guid isPermaLink="false">sowa-v03-interface-overhaul</guid>
+    <pubDate>Sun, 12 Jul 2026 08:00:00 GMT</pubDate>
+    <description>A cleaner interface, faster page loads and a refreshed theme system. This release focuses on readability, mobile performance and a more professional look across the whole platform.</description>
+  </item>
+  <item>
+    <title>How to Recognise a Phishing Email in 10 Seconds</title>
+    <link>https://clearnetsky.github.io/C.N.S-Clear.Net.Sky-S.O.W.A/pages/en/news.html#phishing-in-10-seconds</link>
+    <guid isPermaLink="false">phishing-in-10-seconds</guid>
+    <pubDate>Thu, 02 Jul 2026 08:00:00 GMT</pubDate>
+    <description>Check the sender's real address, hover over every link before clicking, and treat urgency as a red flag. Our analysts break down the anatomy of a modern phishing message.</description>
+  </item>
+  <item>
+    <title>Why Passphrases Beat Complex Passwords</title>
+    <link>https://clearnetsky.github.io/C.N.S-Clear.Net.Sky-S.O.W.A/pages/en/news.html#passphrases-beat-passwords</link>
+    <guid isPermaLink="false">passphrases-beat-passwords</guid>
+    <pubDate>Thu, 18 Jun 2026 08:00:00 GMT</pubDate>
+    <description>Four random words are easier to remember and harder to crack than P@ssw0rd!-style strings. We look at the maths behind passphrase entropy and what it means for everyday users.</description>
+  </item>
+  <item>
+    <title>Ransomware in 2026: Backups Are Still Your Best Defence</title>
+    <link>https://clearnetsky.github.io/C.N.S-Clear.Net.Sky-S.O.W.A/pages/en/news.html#ransomware-2026-backups</link>
+    <guid isPermaLink="false">ransomware-2026-backups</guid>
+    <pubDate>Fri, 05 Jun 2026 08:00:00 GMT</pubDate>
+    <description>Attackers keep evolving, but the recovery playbook stays the same: offline backups, tested restores and least-privilege access. A practical checklist for households and small teams.</description>
+  </item>
+  <item>
+    <title>Securing Your Phone: Our Mobile Checklist</title>
+    <link>https://clearnetsky.github.io/C.N.S-Clear.Net.Sky-S.O.W.A/pages/en/news.html#mobile-security-checklist</link>
+    <guid isPermaLink="false">mobile-security-checklist</guid>
+    <pubDate>Thu, 21 May 2026 08:00:00 GMT</pubDate>
+    <description>From app permissions to SIM-swap protection — ten settings worth reviewing today on Android and iOS. Five minutes of configuration can prevent months of trouble.</description>
+  </item>
+</channel>
+</rss>

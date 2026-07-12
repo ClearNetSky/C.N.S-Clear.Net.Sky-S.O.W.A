@@ -160,8 +160,19 @@ python tools/build.py
 ```
 
 This rewrites all pages in place (between `<!-- build:* -->` markers)
-and regenerates `sitemap.xml`. Everything else is plain static HTML —
-no build step is required to open or deploy the site.
+and regenerates `sitemap.xml` + `feed.xml` (RSS). Everything else is
+plain static HTML — no build step is required to open or deploy the site.
+
+Other tooling:
+
+- `python tools/check_site.py` — validates HTML structure, internal
+  links and build markers (runs in CI on every push);
+- `python tools/fetch_threats.py` — refreshes `data/threats.json`
+  from the public **CISA Known Exploited Vulnerabilities** catalogue.
+  A GitHub Actions cron job runs this daily, so the Threat Database
+  always shows real, current entries;
+- `sw.js` — service worker gives the site offline support (the last
+  visited pages keep working without a network).
 
 To make the contact form live, create a free form at
 [formspree.io](https://formspree.io) (or web3forms.com) and paste the

@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    name: Site health check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generated chrome is in sync (tools/build.py)
+        run: |
+          python tools/build.py
+          # sitemap.xml carries a lastmod date that changes daily — not a sync error
+          git checkout -- sitemap.xml
+          git diff --exit-code || {
+            echo "::error::Pages are out of sync with tools/build.py — run it and commit the result."
+            exit 1
+          }
+
+      - name: HTML structure and internal links
+        run: python tools/check_site.py
+
+      - name: JavaScript syntax
+        run: |
+          for f in js/*.js; do node --check "$f"; done
+          echo "all JS files parse"

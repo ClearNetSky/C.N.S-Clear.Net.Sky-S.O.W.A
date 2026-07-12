@@ -1,0 +1,36 @@
+name: Update threat feed
+
+on:
+  schedule:
+    # Daily at 06:20 UTC (CISA publishes KEV updates on business days)
+    - cron: "20 6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    name: Refresh data/threats.json from CISA KEV
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch newest KEV entries
+        run: python tools/fetch_threats.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- data/threats.json; then
+            echo "No changes — feed already up to date."
+            exit 0
+          fi
+          git config user.name "sowa-bot"
+          git config user.email "actions@github.com"
+          git add data/threats.json
+          git commit -m "chore: refresh threat feed from CISA KEV"
+          git push

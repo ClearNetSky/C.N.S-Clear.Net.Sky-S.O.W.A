@@ -86,7 +86,11 @@ const ThemeManager = {
 
     current() {
         const saved = localStorage.getItem('cns-theme');
-        return this.themes.includes(saved) ? saved : 'cyber-theme';
+        if (this.themes.includes(saved)) return saved;
+        // First visit: follow the OS preference (light users get Daylight)
+        const prefersLight = window.matchMedia &&
+            window.matchMedia('(prefers-color-scheme: light)').matches;
+        return prefersLight ? 'light-theme' : 'cyber-theme';
     },
 
     apply(theme, announce = false) {
@@ -451,6 +455,16 @@ function setupPrefetch() {
 }
 
 /* ---------------------------------------------------------------
+   Service worker — offline support (https only; skipped on file://)
+   --------------------------------------------------------------- */
+function setupServiceWorker() {
+    if (!('serviceWorker' in navigator)) return;
+    if (!/^https?:$/.test(window.location.protocol)) return;
+    const base = window.location.pathname.includes('/pages/') ? '../../' : './';
+    navigator.serviceWorker.register(base + 'sw.js').catch(() => { /* optional */ });
+}
+
+/* ---------------------------------------------------------------
    "Coming soon" placeholder links (#)
    --------------------------------------------------------------- */
 function setupPlaceholderLinks() {
@@ -522,6 +536,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupLogin();
     setupContactForm();
     setupPrefetch();
+    setupServiceWorker();
     setupPlaceholderLinks();
     setupReveal();
     attachRipples();

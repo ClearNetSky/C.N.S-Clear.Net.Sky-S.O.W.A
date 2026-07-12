@@ -118,6 +118,36 @@ PAGES = {
     },
 }
 
+# ---------- News articles (for the RSS feed) ----------
+# Keep in sync with pages/en/news.html when adding articles.
+ARTICLES = [
+    {
+        "slug": "phishing-in-10-seconds", "date": "2026-07-02",
+        "title": "How to Recognise a Phishing Email in 10 Seconds",
+        "desc": "Check the sender's real address, hover over every link before clicking, and treat urgency as a red flag. Our analysts break down the anatomy of a modern phishing message.",
+    },
+    {
+        "slug": "sowa-v03-interface-overhaul", "date": "2026-07-12",
+        "title": "S.O.W.A Platform v0.3: Interface Overhaul",
+        "desc": "A cleaner interface, faster page loads and a refreshed theme system. This release focuses on readability, mobile performance and a more professional look across the whole platform.",
+    },
+    {
+        "slug": "passphrases-beat-passwords", "date": "2026-06-18",
+        "title": "Why Passphrases Beat Complex Passwords",
+        "desc": "Four random words are easier to remember and harder to crack than P@ssw0rd!-style strings. We look at the maths behind passphrase entropy and what it means for everyday users.",
+    },
+    {
+        "slug": "ransomware-2026-backups", "date": "2026-06-05",
+        "title": "Ransomware in 2026: Backups Are Still Your Best Defence",
+        "desc": "Attackers keep evolving, but the recovery playbook stays the same: offline backups, tested restores and least-privilege access. A practical checklist for households and small teams.",
+    },
+    {
+        "slug": "mobile-security-checklist", "date": "2026-05-21",
+        "title": "Securing Your Phone: Our Mobile Checklist",
+        "desc": "From app permissions to SIM-swap protection — ten settings worth reviewing today on Android and iOS. Five minutes of configuration can prevent months of trouble.",
+    },
+]
+
 OWL_SVG = """<svg class="owl-emblem" viewBox="0 0 64 64" role="img" aria-label="S.O.W.A owl emblem">
                         <path class="owl-fill" d="M18 14 L24 24 L13 22 Z"/>
                         <path class="owl-fill" d="M46 14 L40 24 L51 22 Z"/>
@@ -294,6 +324,7 @@ def build_seo(path, cfg):
         f'<meta name="twitter:description" content="{cfg["desc"]}">',
         f'<link rel="icon" type="image/svg+xml" href="{cfg["prefix"]}images/favicon.svg">',
         f'<link rel="manifest" href="{cfg["prefix"]}manifest.webmanifest">',
+        f'<link rel="alternate" type="application/rss+xml" title="C.N.S Security News" href="{SITE}/feed.xml">',
         '<meta name="theme-color" content="#070a13">',
     ]
     body = "\n    ".join(lines)
@@ -372,8 +403,38 @@ def build_sitemap():
     print("built sitemap.xml")
 
 
+def build_rss():
+    from datetime import datetime
+    items = []
+    for a in sorted(ARTICLES, key=lambda x: x["date"], reverse=True):
+        pub = datetime.strptime(a["date"], "%Y-%m-%d").strftime("%a, %d %b %Y 08:00:00 GMT")
+        link = f"{SITE}/pages/en/news.html#{a['slug']}"
+        items.append(
+            "  <item>\n"
+            f"    <title>{a['title']}</title>\n"
+            f"    <link>{link}</link>\n"
+            f"    <guid isPermaLink=\"false\">{a['slug']}</guid>\n"
+            f"    <pubDate>{pub}</pubDate>\n"
+            f"    <description>{a['desc']}</description>\n"
+            "  </item>"
+        )
+    xml = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<rss version="2.0">\n'
+        "<channel>\n"
+        "  <title>C.N.S — Clear Net Sky | Security News</title>\n"
+        f"  <link>{SITE}/pages/en/news.html</link>\n"
+        "  <description>Security news, threat alerts and research from the Clear Net Sky (S.O.W.A) team.</description>\n"
+        "  <language>en</language>\n"
+        + "\n".join(items) + "\n</channel>\n</rss>\n"
+    )
+    io.open(os.path.join(ROOT, "feed.xml"), "w", encoding="utf-8", newline="\n").write(xml)
+    print("built feed.xml")
+
+
 if __name__ == "__main__":
     for path, cfg in PAGES.items():
         process(path, cfg)
     build_sitemap()
+    build_rss()
     print("done.")

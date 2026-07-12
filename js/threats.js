@@ -27,6 +27,43 @@
 
     const lang = () => (window.languageManager && window.languageManager.currentLang) || 'ru';
 
+    /* ---------- Live feed (CISA KEV via data/threats.json) ----------
+       data/threats.json is refreshed by a GitHub Actions cron job
+       (tools/fetch_threats.py), so the browser never calls external
+       APIs. If the file is missing (offline, file://), the static
+       catalogue above still works. */
+    let FEED_META = null;
+
+    function loadLiveFeed() {
+        if (typeof fetch !== 'function') return;
+        const prefix = window.location.pathname.includes('/pages/') ? '../../' : '';
+        fetch(prefix + 'data/threats.json', { cache: 'no-cache' })
+            .then(r => (r.ok ? r.json() : Promise.reject()))
+            .then(data => {
+                if (!data || !Array.isArray(data.items)) return;
+                FEED_META = { source: data.source, url: data.sourceUrl, updated: data.updated };
+                // Newest live entries go on top; avoid duplicates on re-runs.
+                const known = new Set(THREATS.map(t => t.name));
+                const fresh = data.items.filter(i => !known.has(i.name));
+                THREATS.unshift(...fresh);
+                renderFeedNote();
+                apply();
+            })
+            .catch(() => { /* offline / file:// — keep static data */ });
+    }
+
+    function renderFeedNote() {
+        const container = document.querySelector('.threats-table-container');
+        if (!container || !FEED_META || document.getElementById('feed-note')) return;
+        const note = document.createElement('p');
+        note.id = 'feed-note';
+        note.style.cssText = 'padding:0.7rem 1.25rem;margin:0;font-size:0.75rem;color:var(--text-muted);border-top:1px solid var(--border-color);font-family:var(--font-mono);';
+        const label = lang() === 'ru' ? 'Живые данные' : 'Live data';
+        const upd = lang() === 'ru' ? 'обновлено' : 'updated';
+        note.innerHTML = `${label}: <a href="${FEED_META.url}" target="_blank" rel="noopener">${FEED_META.source}</a> · ${upd} ${FEED_META.updated}`;
+        container.appendChild(note);
+    }
+
     const STR = {
         ru: { active: 'Активна', contained: 'Локализована', critical: 'Критический', high: 'Высокий', medium: 'Средний', low: 'Низкий', empty: 'Угрозы не найдены', dayAgo: 'дн. назад', today: 'сегодня', exported: 'Данные экспортированы (CSV)' },
         en: { active: 'Active', contained: 'Contained', critical: 'Critical', high: 'High', medium: 'Medium', low: 'Low', empty: 'No threats match the filters', dayAgo: 'd ago', today: 'today', exported: 'Threat data exported (CSV)' }
@@ -131,6 +168,11 @@
         if (search) search.addEventListener('input', apply);
         setupActions();
         apply();
-        document.addEventListener('languagechange', apply);
+        loadLiveFeed();
+        document.addEventListener('languagechange', () => {
+            const note = document.getElementById('feed-note');
+            if (note) { note.remove(); renderFeedNote(); }
+            apply();
+        });
     });
 })();

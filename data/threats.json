@@ -1,0 +1,151 @@
+{
+  "source": "CISA Known Exploited Vulnerabilities Catalog",
+  "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+  "updated": "2026-07-12",
+  "items": [
+    {
+      "name": "CVE-2026-56291",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Balbooa Forms",
+        "ru": "Эксплуатируемая уязвимость · Balbooa Forms"
+      },
+      "sev": "high",
+      "days": 2,
+      "active": true,
+      "desc": "Balbooa Forms contains an unrestricted upload of file with dangerous type vulnerability that allows an unauthenticated arbitrary file upload which could allow uploading of executable files leading to full RCE."
+    },
+    {
+      "name": "CVE-2026-48939",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · iCagenda iCagenda",
+        "ru": "Эксплуатируемая уязвимость · iCagenda iCagenda"
+      },
+      "sev": "high",
+      "days": 2,
+      "active": true,
+      "desc": "iCagenda contains an unrestricted upload of file with dangerous type vulnerability that allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and execution."
+    },
+    {
+      "name": "CVE-2026-48908",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · JoomShaper SP Page Builder",
+        "ru": "Эксплуатируемая уязвимость · JoomShaper SP Page Builder"
+      },
+      "sev": "high",
+      "days": 5,
+      "active": true,
+      "desc": "JoomShaper SP Page Builder contains an unrestricted upload of file with dangerous type vulnerability that allows unauthenticated users to upload arbitrary files, ultimately resulting in the upload and execution of PHP co"
+    },
+    {
+      "name": "CVE-2026-55255",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Langflow Langflow",
+        "ru": "Эксплуатируемая уязвимость · Langflow Langflow"
+      },
+      "sev": "high",
+      "days": 5,
+      "active": true,
+      "desc": "Langflow contains an authorization bypass through user-controlled key vulnerability which allows an authenticated attacker to execute any flow belonging to another user by specifying the victim's flow ID in the request."
+    },
+    {
+      "name": "CVE-2026-56290",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Joomlack Page Builder",
+        "ru": "Эксплуатируемая уязвимость · Joomlack Page Builder"
+      },
+      "sev": "high",
+      "days": 5,
+      "active": true,
+      "desc": "Joomlack Page Builder contains an improper access control vulnerability that could allow for remote code execution via unauthenticated arbitrary file upload."
+    },
+    {
+      "name": "CVE-2026-48282",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Adobe ColdFusion",
+        "ru": "Эксплуатируемая уязвимость · Adobe ColdFusion"
+      },
+      "sev": "high",
+      "days": 5,
+      "active": true,
+      "desc": "Adobe ColdFusion contains a path traversal vulnerability that could lead to arbitrary code execution in the context of the current user."
+    },
+    {
+      "name": "CVE-2026-45659",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Microsoft SharePoint Server",
+        "ru": "Эксплуатируемая уязвимость · Microsoft SharePoint Server"
+      },
+      "sev": "high",
+      "days": 11,
+      "active": true,
+      "desc": "Microsoft SharePoint Server contains a deserialization of untrusted data vulnerability which allows an authorized attacker to execute code over a network."
+    },
+    {
+      "name": "CVE-2026-48558",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · SimpleHelp SimpleHelp",
+        "ru": "Эксплуатируемая уязвимость · SimpleHelp SimpleHelp"
+      },
+      "sev": "high",
+      "days": 13,
+      "active": true,
+      "desc": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographi"
+    },
+    {
+      "name": "CVE-2026-12569",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · PTC Windchill and FlexPLM",
+        "ru": "Эксплуатируемая уязвимость · PTC Windchill and FlexPLM"
+      },
+      "sev": "high",
+      "days": 17,
+      "active": true,
+      "desc": "PTC Windchill and FlexPLM contains an improper input validation vulnerability allowing an unauthenticated, remote attacker to execute arbitrary code by sending a malicious request to the network."
+    },
+    {
+      "name": "CVE-2026-20230",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Cisco Unified Communications Manager",
+        "ru": "Эксплуатируемая уязвимость · Cisco Unified Communications Manager"
+      },
+      "sev": "high",
+      "days": 17,
+      "active": true,
+      "desc": "Cisco Unified Communications Manager (Unified CM) and Cisco Unified Communications Manager Session Management Edition (Unified CM SME) contain a server-side request forgery (SSRF) Vulnerability that could allow an unauth"
+    },
+    {
+      "name": "CVE-2025-67038",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Lantronix EDS5000",
+        "ru": "Эксплуатируемая уязвимость · Lantronix EDS5000"
+      },
+      "sev": "high",
+      "days": 19,
+      "active": true,
+      "desc": "Lantronix EDS5000 contains a code injection vulnerability that could allow attackers to inject arbitrary OS commands into the username parameter. Injected commands are executed with root privileges."
+    },
+    {
+      "name": "CVE-2026-34910",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Ubiquiti UniFi OS",
+        "ru": "Эксплуатируемая уязвимость · Ubiquiti UniFi OS"
+      },
+      "sev": "high",
+      "days": 19,
+      "active": true,
+      "desc": "Ubiquiti UniFi OS contains an improper input validation vulnerability which could allow a malicious actor with access to the network to conduct command injection."
+    }
+  ]
+}
