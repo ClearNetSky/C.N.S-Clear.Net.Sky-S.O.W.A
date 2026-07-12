@@ -19,9 +19,12 @@ class SoundManager {
             background: document.getElementById('background-music')
         };
 
-        // Sound is opt-in: a professional default is silence, and the
-        // toggle in the header lets returning fans switch it back on.
-        this.soundEnabled = false;
+        // Two independent channels:
+        //  - music (background track) — opt-in, toggled by the header button;
+        //  - sfx (hover/click/table)  — on by default, subtle UI feedback.
+        // Muting the music never kills the interface sounds.
+        this.musicEnabled = false;
+        this.sfxEnabled = true;
         this.volume = 0.3;
 
         this.init();
@@ -57,15 +60,20 @@ class SoundManager {
         if (this._initialized) return;
         this._initialized = true;
 
-        const pref = localStorage.getItem('cns-sound-enabled');
-        if (pref !== null) this.soundEnabled = pref === 'true';
+        const music = localStorage.getItem('cns-music-enabled');
+        const legacy = localStorage.getItem('cns-sound-enabled'); // pre-split pref
+        if (music !== null) this.musicEnabled = music === 'true';
+        else if (legacy !== null) this.musicEnabled = legacy === 'true';
+
+        const sfx = localStorage.getItem('cns-sfx-enabled');
+        if (sfx !== null) this.sfxEnabled = sfx === 'true';
 
         this.setVolume(this.volume);
         this.updateSoundToggle();
         this.setupEventListeners();
         this.trackBackgroundProgress();
 
-        if (this.soundEnabled) this.playBackgroundMusic();
+        if (this.musicEnabled) this.playBackgroundMusic();
     }
 
     setupEventListeners() {
@@ -87,7 +95,7 @@ class SoundManager {
 
         // Unlock audio on the first user gesture (autoplay policy).
         const unlock = () => {
-            if (this.soundEnabled) this.playBackgroundMusic();
+            if (this.musicEnabled) this.playBackgroundMusic();
             document.removeEventListener('pointerdown', unlock);
             document.removeEventListener('keydown', unlock);
         };
@@ -96,7 +104,7 @@ class SoundManager {
     }
 
     _playSfx(audio) {
-        if (!this.soundEnabled || !audio) return;
+        if (!this.sfxEnabled || !audio) return;
         try {
             audio.currentTime = 0;
             const p = audio.play();
@@ -110,7 +118,7 @@ class SoundManager {
 
     playBackgroundMusic() {
         const bg = this.sounds.background;
-        if (!this.soundEnabled || !bg) return;
+        if (!this.musicEnabled || !bg) return;
 
         // Resume the saved position once metadata is available.
         const restore = () => {
@@ -154,31 +162,39 @@ class SoundManager {
         });
     }
 
+    /** Header button: toggles the background music only (SFX stay on). */
     toggleSound() {
-        this.soundEnabled = !this.soundEnabled;
-        localStorage.setItem('cns-sound-enabled', this.soundEnabled);
+        this.musicEnabled = !this.musicEnabled;
+        localStorage.setItem('cns-music-enabled', this.musicEnabled);
 
-        if (this.soundEnabled) this.playBackgroundMusic();
+        if (this.musicEnabled) this.playBackgroundMusic();
         else this.stopBackgroundMusic();
 
         this.updateSoundToggle();
 
         if (window.Toast && window.languageManager) {
-            const on = this.soundEnabled;
+            const on = this.musicEnabled;
             const lang = window.languageManager.currentLang;
             const msg = on
-                ? (lang === 'ru' ? 'Звук включён' : 'Sound on')
-                : (lang === 'ru' ? 'Звук выключен' : 'Sound off');
+                ? (lang === 'ru' ? 'Музыка включена' : 'Music on')
+                : (lang === 'ru' ? 'Музыка выключена' : 'Music off');
             window.Toast.show(msg, 'info', '', 2000);
         }
+    }
+
+    /** Separate switch for interface sounds (not exposed in the header). */
+    toggleSfx() {
+        this.sfxEnabled = !this.sfxEnabled;
+        localStorage.setItem('cns-sfx-enabled', this.sfxEnabled);
+        return this.sfxEnabled;
     }
 
     updateSoundToggle() {
         const toggle = document.getElementById('sound-toggle');
         if (!toggle) return;
         const icon = toggle.querySelector('i');
-        if (icon) icon.className = this.soundEnabled ? 'fas fa-volume-up' : 'fas fa-volume-xmark';
-        toggle.setAttribute('aria-pressed', String(this.soundEnabled));
+        if (icon) icon.className = this.musicEnabled ? 'fas fa-volume-up' : 'fas fa-volume-xmark';
+        toggle.setAttribute('aria-pressed', String(this.musicEnabled));
     }
 
     setVolume(volume) {

@@ -1461,9 +1461,22 @@ select option {
     height: 2.3rem;
 }
 
-.logo-icon .owl-emblem .owl-body  { fill: none; stroke: var(--primary-color); stroke-width: 5; }
+.logo-icon .owl-emblem .owl-body {
+    fill: none;
+    stroke: var(--primary-color);
+    stroke-width: 5;
+    stroke-linejoin: round;
+}
 .logo-icon .owl-emblem .owl-fill  { fill: var(--primary-color); }
 .logo-icon .owl-emblem .owl-pupil { fill: var(--bg-primary); }
+.logo-icon .owl-emblem .owl-feather {
+    fill: none;
+    stroke: var(--primary-color);
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    opacity: 0.55;
+}
 
 .live-badge {
     display: inline-flex;

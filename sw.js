@@ -4,7 +4,7 @@
 // when online, and the last seen version keeps working offline.
 // ============================================================
 
-const CACHE = 'cns-v0.3.0';
+const CACHE = 'cns-v0.3.1';
 
 // Resolved against the worker's scope, so this works both on
 // GitHub Pages project paths and on a local server.
