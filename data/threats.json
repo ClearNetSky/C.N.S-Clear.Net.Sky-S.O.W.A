@@ -1,8 +1,56 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-07-14",
+  "updated": "2026-07-15",
   "items": [
+    {
+      "name": "CVE-2026-56155",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Microsoft Active Directory Federation Services",
+        "ru": "Эксплуатируемая уязвимость · Microsoft Active Directory Federation Services"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Microsoft Active Directory Federation Services contains an insufficient granularity of access control vulnerability that allows an authorized attacker to elevate privileges locally."
+    },
+    {
+      "name": "CVE-2026-56164",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Microsoft SharePoint Server",
+        "ru": "Эксплуатируемая уязвимость · Microsoft SharePoint Server"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Microsoft SharePoint contains a missing authentication for critical function vulnerability that allows an unauthorized attacker to elevate privileges over a network."
+    },
+    {
+      "name": "CVE-2026-15409",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · SonicWall SMA1000 Appliances",
+        "ru": "Эксплуатируемая уязвимость · SonicWall SMA1000 Appliances"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended location."
+    },
+    {
+      "name": "CVE-2026-15410",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · SonicWall SMA1000 Appliances",
+        "ru": "Эксплуатируемая уязвимость · SonicWall SMA1000 Appliances"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "SonicWall SMA1000 Appliances contain a code injection vulnerability which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands."
+    },
     {
       "name": "CVE-2008-4128",
       "cat": "vulnerability",
@@ -11,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · Cisco IOS"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Cisco IOS 12.4 contains multiple cross-site forgery vulnerabilities that allows remote attackers to execute arbitrary commands via (1) a certain \"show privilege\" command to the /level/15/exec/- URI, and (2) a certain \"al"
     },
@@ -23,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · Balbooa Forms"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "Balbooa Forms contains an unrestricted upload of file with dangerous type vulnerability that allows an unauthenticated arbitrary file upload which could allow uploading of executable files leading to full RCE."
     },
@@ -35,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · iCagenda iCagenda"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "iCagenda contains an unrestricted upload of file with dangerous type vulnerability that allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and execution."
     },
@@ -47,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · JoomShaper SP Page Builder"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "JoomShaper SP Page Builder contains an unrestricted upload of file with dangerous type vulnerability that allows unauthenticated users to upload arbitrary files, ultimately resulting in the upload and execution of PHP co"
     },
@@ -59,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · Langflow Langflow"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Langflow contains an authorization bypass through user-controlled key vulnerability which allows an authenticated attacker to execute any flow belonging to another user by specifying the victim's flow ID in the request."
     },
@@ -71,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · Joomlack Page Builder"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Joomlack Page Builder contains an improper access control vulnerability that could allow for remote code execution via unauthenticated arbitrary file upload."
     },
@@ -83,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · Adobe ColdFusion"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Adobe ColdFusion contains a path traversal vulnerability that could lead to arbitrary code execution in the context of the current user."
     },
@@ -95,57 +143,9 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft SharePoint Server"
       },
       "sev": "high",
-      "days": 13,
+      "days": 14,
       "active": true,
       "desc": "Microsoft SharePoint Server contains a deserialization of untrusted data vulnerability which allows an authorized attacker to execute code over a network."
-    },
-    {
-      "name": "CVE-2026-48558",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · SimpleHelp SimpleHelp",
-        "ru": "Эксплуатируемая уязвимость · SimpleHelp SimpleHelp"
-      },
-      "sev": "high",
-      "days": 15,
-      "active": true,
-      "desc": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographi"
-    },
-    {
-      "name": "CVE-2026-12569",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · PTC Windchill and FlexPLM",
-        "ru": "Эксплуатируемая уязвимость · PTC Windchill and FlexPLM"
-      },
-      "sev": "high",
-      "days": 19,
-      "active": true,
-      "desc": "PTC Windchill and FlexPLM contains an improper input validation vulnerability allowing an unauthenticated, remote attacker to execute arbitrary code by sending a malicious request to the network."
-    },
-    {
-      "name": "CVE-2026-20230",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Cisco Unified Communications Manager",
-        "ru": "Эксплуатируемая уязвимость · Cisco Unified Communications Manager"
-      },
-      "sev": "high",
-      "days": 19,
-      "active": true,
-      "desc": "Cisco Unified Communications Manager (Unified CM) and Cisco Unified Communications Manager Session Management Edition (Unified CM SME) contain a server-side request forgery (SSRF) Vulnerability that could allow an unauth"
-    },
-    {
-      "name": "CVE-2025-67038",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Lantronix EDS5000",
-        "ru": "Эксплуатируемая уязвимость · Lantronix EDS5000"
-      },
-      "sev": "high",
-      "days": 21,
-      "active": true,
-      "desc": "Lantronix EDS5000 contains a code injection vulnerability that could allow attackers to inject arbitrary OS commands into the username parameter. Injected commands are executed with root privileges."
     }
   ]
 }
