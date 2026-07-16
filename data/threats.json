@@ -1,8 +1,32 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-07-15",
+  "updated": "2026-07-16",
   "items": [
+    {
+      "name": "CVE-2026-46817",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Oracle E-Business Suite",
+        "ru": "Эксплуатируемая уязвимость · Oracle E-Business Suite"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Oracle E-Business Suite contains an improper privilege management vulnerability that allows an unauthenticated attacker with network access via HTTP to compromise Oracle Payments. Successful attacks of this vulnerability"
+    },
+    {
+      "name": "CVE-2023-4346",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · KNX Association KNX Protocol Connection Authorization Option 1",
+        "ru": "Эксплуатируемая уязвимость · KNX Association KNX Protocol Connection Authorization Option 1"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "KNX Association KNX Protocol Connection Authorization Option 1 contains an overly restrictive account lockout mechanism vulnerability that could allow an attacker to purge all devices without additional security options "
+    },
     {
       "name": "CVE-2026-56155",
       "cat": "vulnerability",
@@ -11,7 +35,7 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft Active Directory Federation Services"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Microsoft Active Directory Federation Services contains an insufficient granularity of access control vulnerability that allows an authorized attacker to elevate privileges locally."
     },
@@ -23,7 +47,7 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft SharePoint Server"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Microsoft SharePoint contains a missing authentication for critical function vulnerability that allows an unauthorized attacker to elevate privileges over a network."
     },
@@ -35,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · SonicWall SMA1000 Appliances"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended location."
     },
@@ -47,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · SonicWall SMA1000 Appliances"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "SonicWall SMA1000 Appliances contain a code injection vulnerability which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands."
     },
@@ -59,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · Cisco IOS"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "Cisco IOS 12.4 contains multiple cross-site forgery vulnerabilities that allows remote attackers to execute arbitrary commands via (1) a certain \"show privilege\" command to the /level/15/exec/- URI, and (2) a certain \"al"
     },
@@ -71,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · Balbooa Forms"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
       "desc": "Balbooa Forms contains an unrestricted upload of file with dangerous type vulnerability that allows an unauthenticated arbitrary file upload which could allow uploading of executable files leading to full RCE."
     },
@@ -83,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · iCagenda iCagenda"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
       "desc": "iCagenda contains an unrestricted upload of file with dangerous type vulnerability that allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and execution."
     },
@@ -95,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · JoomShaper SP Page Builder"
       },
       "sev": "high",
-      "days": 8,
+      "days": 9,
       "active": true,
       "desc": "JoomShaper SP Page Builder contains an unrestricted upload of file with dangerous type vulnerability that allows unauthenticated users to upload arbitrary files, ultimately resulting in the upload and execution of PHP co"
     },
@@ -107,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · Langflow Langflow"
       },
       "sev": "high",
-      "days": 8,
+      "days": 9,
       "active": true,
       "desc": "Langflow contains an authorization bypass through user-controlled key vulnerability which allows an authenticated attacker to execute any flow belonging to another user by specifying the victim's flow ID in the request."
     },
@@ -119,33 +143,9 @@
         "ru": "Эксплуатируемая уязвимость · Joomlack Page Builder"
       },
       "sev": "high",
-      "days": 8,
+      "days": 9,
       "active": true,
       "desc": "Joomlack Page Builder contains an improper access control vulnerability that could allow for remote code execution via unauthenticated arbitrary file upload."
-    },
-    {
-      "name": "CVE-2026-48282",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Adobe ColdFusion",
-        "ru": "Эксплуатируемая уязвимость · Adobe ColdFusion"
-      },
-      "sev": "high",
-      "days": 8,
-      "active": true,
-      "desc": "Adobe ColdFusion contains a path traversal vulnerability that could lead to arbitrary code execution in the context of the current user."
-    },
-    {
-      "name": "CVE-2026-45659",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Microsoft SharePoint Server",
-        "ru": "Эксплуатируемая уязвимость · Microsoft SharePoint Server"
-      },
-      "sev": "high",
-      "days": 14,
-      "active": true,
-      "desc": "Microsoft SharePoint Server contains a deserialization of untrusted data vulnerability which allows an authorized attacker to execute code over a network."
     }
   ]
 }
