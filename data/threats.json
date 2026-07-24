@@ -1,7 +1,7 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-07-23",
+  "updated": "2026-07-24",
   "items": [
     {
       "name": "CVE-2026-16232",
@@ -11,7 +11,7 @@
         "ru": "Эксплуатируемая уязвимость · Check Point SmartConsole"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Check Point SmartConsole contains an improper authentication vulnerability which could allow an unauthenticated remote attacker to obtain an application login token and use it to authenticate with full administrative pri"
     },
@@ -23,7 +23,7 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft SharePoint"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability which could allow an unauthorized attacker to execute code over a network."
     },
@@ -35,7 +35,7 @@
         "ru": "Эксплуатируемая уязвимость · WordPress Core"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain rem"
     },
@@ -47,7 +47,7 @@
         "ru": "Эксплуатируемая уязвимость · WordPress Core"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137."
     },
@@ -59,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · Langflow Langflow"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "Langflow contains an inclusion of functionality from untrusted control sphere vulnerability that allows remote attackers to execute arbitrary code on affected installations."
     },
@@ -71,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · DD-WRT DD-WRT"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "DD-WRT contains a stack-based buffer overflow vulnerability that could allow an unauthenticated attacker to overflow an internal buffer used by UPnP and trigger a code execution vulnerability."
     },
@@ -83,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft SharePoint"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability that allows an unauthorized attacker to execute code over a network."
     },
@@ -95,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · Fortinet FortiSandbox"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Fortinet FortiSandbox, FortiSandbox Cloud, and FortiSandbox PaaS contain an OS command injection vulnerability that allows an unauthenticated attacker to execute unauthorized commands via specifically crafted HTTP reques"
     },
@@ -107,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · Fortinet FortiSandbox"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Fortinet FortiSandbox contains an OS command injection vulnerability that could allow an unauthenticated attacker to execute unauthorized code or commands via crafted HTTP requests."
     },
@@ -119,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · Oracle E-Business Suite"
       },
       "sev": "high",
-      "days": 8,
+      "days": 9,
       "active": true,
       "desc": "Oracle E-Business Suite contains an improper privilege management vulnerability that allows an unauthenticated attacker with network access via HTTP to compromise Oracle Payments. Successful attacks of this vulnerability"
     },
@@ -131,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · KNX Association KNX Protocol Connection Authorization Option 1"
       },
       "sev": "high",
-      "days": 8,
+      "days": 9,
       "active": true,
       "desc": "KNX Association KNX Protocol Connection Authorization Option 1 contains an overly restrictive account lockout mechanism vulnerability that could allow an attacker to purge all devices without additional security options "
     },
@@ -143,7 +143,7 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft Active Directory Federation Services"
       },
       "sev": "high",
-      "days": 9,
+      "days": 10,
       "active": true,
       "desc": "Microsoft Active Directory Federation Services contains an insufficient granularity of access control vulnerability that allows an authorized attacker to elevate privileges locally."
     }
