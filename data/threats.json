@@ -1,7 +1,7 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-08-01",
+  "updated": "2026-08-02",
   "items": [
     {
       "name": "CVE-2026-20316",
@@ -11,7 +11,7 @@
         "ru": "Эксплуатируемая уязвимость · Cisco Secure Firewall Management Center (FMC)"
       },
       "sev": "high",
-      "days": 3,
+      "days": 4,
       "active": true,
       "desc": "Cisco Secure Firewall Management Center (FMC) formerly known as Firepower Management Center contains a use of hard-coded password vulnerability that could allow an unauthenticated, remote attacker to log in to an affecte"
     },
@@ -23,7 +23,7 @@
         "ru": "Эксплуатируемая уязвимость · Fortinet FortiOS"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
       "desc": "Fortinet FortiOS contains an exposure of sensitive information to an unauthorized actor vulnerability. This may allow a remote unauthenticated attacker to bypass the patch developed for the symbolic link persistency mech"
     },
@@ -35,7 +35,7 @@
         "ru": "Эксплуатируемая уязвимость · Arista VeloCloud Orchestrator"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
       "desc": "Arista VeloCloud Orchestrator On-Prem contains an OS command injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compr"
     },
@@ -47,7 +47,7 @@
         "ru": "Эксплуатируемая уязвимость · Check Point SmartConsole"
       },
       "sev": "high",
-      "days": 10,
+      "days": 11,
       "active": true,
       "desc": "Check Point SmartConsole contains an improper authentication vulnerability which could allow an unauthenticated remote attacker to obtain an application login token and use it to authenticate with full administrative pri"
     },
@@ -59,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft SharePoint"
       },
       "sev": "high",
-      "days": 10,
+      "days": 11,
       "active": true,
       "desc": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability which could allow an unauthorized attacker to execute code over a network."
     },
@@ -71,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · WordPress Core"
       },
       "sev": "high",
-      "days": 11,
+      "days": 12,
       "active": true,
       "desc": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain rem"
     },
@@ -83,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · WordPress Core"
       },
       "sev": "high",
-      "days": 11,
+      "days": 12,
       "active": true,
       "desc": "WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137."
     },
@@ -95,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · Langflow Langflow"
       },
       "sev": "high",
-      "days": 11,
+      "days": 12,
       "active": true,
       "desc": "Langflow contains an inclusion of functionality from untrusted control sphere vulnerability that allows remote attackers to execute arbitrary code on affected installations."
     },
@@ -107,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · DD-WRT DD-WRT"
       },
       "sev": "high",
-      "days": 11,
+      "days": 12,
       "active": true,
       "desc": "DD-WRT contains a stack-based buffer overflow vulnerability that could allow an unauthenticated attacker to overflow an internal buffer used by UPnP and trigger a code execution vulnerability."
     },
@@ -119,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft SharePoint"
       },
       "sev": "high",
-      "days": 16,
+      "days": 17,
       "active": true,
       "desc": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability that allows an unauthorized attacker to execute code over a network."
     },
@@ -131,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · Fortinet FortiSandbox"
       },
       "sev": "high",
-      "days": 16,
+      "days": 17,
       "active": true,
       "desc": "Fortinet FortiSandbox, FortiSandbox Cloud, and FortiSandbox PaaS contain an OS command injection vulnerability that allows an unauthenticated attacker to execute unauthorized commands via specifically crafted HTTP reques"
     },
@@ -143,7 +143,7 @@
         "ru": "Эксплуатируемая уязвимость · Fortinet FortiSandbox"
       },
       "sev": "high",
-      "days": 16,
+      "days": 17,
       "active": true,
       "desc": "Fortinet FortiSandbox contains an OS command injection vulnerability that could allow an unauthenticated attacker to execute unauthorized code or commands via crafted HTTP requests."
     }
