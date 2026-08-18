@@ -1,8 +1,20 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-08-17",
+  "updated": "2026-08-18",
   "items": [
+    {
+      "name": "CVE-2025-62593",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Ray-Project Ray",
+        "ru": "Эксплуатируемая уязвимость · Ray-Project Ray"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Ray-Project Ray contains a code injection vulnerability that could allow remote code execution. Developers using Ray as a development tool may be exposed to this vulnerability exploitable through Firefox and Safari."
+    },
     {
       "name": "CVE-2026-20349",
       "cat": "vulnerability",
@@ -11,7 +23,7 @@
         "ru": "Эксплуатируемая уязвимость · Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD)"
       },
       "sev": "high",
-      "days": 6,
+      "days": 7,
       "active": true,
       "desc": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) contain a heap inspection vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload "
     },
@@ -23,7 +35,7 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft Windows Ancillary Function Driver for WinSock"
       },
       "sev": "high",
-      "days": 6,
+      "days": 7,
       "active": true,
       "desc": "Microsoft Windows Ancillary Function Driver for WinSock contains a use-after-free vulnerability that allows an authorized attacker to elevate privileges locally."
     },
@@ -35,7 +47,7 @@
         "ru": "Эксплуатируемая уязвимость · Metabase Metabase"
       },
       "sev": "high",
-      "days": 6,
+      "days": 7,
       "active": true,
       "desc": "Metabase contains a SQL Injection vulnerability that allows an unauthenticated remote attacker to inject arbitrary SQL into the Metabase application database, which can give them administrator access to the instance. Fro"
     },
@@ -47,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · Progress LoadMaster"
       },
       "sev": "high",
-      "days": 10,
+      "days": 11,
       "active": true,
       "desc": "Progress LoadMaster contains a command injection vulnerability that allows an un-authenticated attacker to execute arbitrary commands on the LoadMaster appliance by exploiting unsanitized input in multiple command endpoi"
     },
@@ -59,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · JetBrains TeamCity"
       },
       "sev": "high",
-      "days": 12,
+      "days": 13,
       "active": true,
       "desc": "JetBrains TeamCity contains a deserialization of untrusted data vulnerability that could allow unauthenticated remote code execution via the agent polling protocol."
     },
@@ -71,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · N-able N-central"
       },
       "sev": "high",
-      "days": 13,
+      "days": 14,
       "active": true,
       "desc": "N-able N-central contains an authentication bypass using an alternate path or channel that allows for authentication bypass."
     },
@@ -83,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · Apache Tomcat"
       },
       "sev": "high",
-      "days": 13,
+      "days": 14,
       "active": true,
       "desc": "Apache Tomcat contains a missing encryption of sensitive data vulnerability that allows the bypass of the EncryptInterceptor. This vulnerability can be chained with CVE‑2025‑24813."
     },
@@ -95,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · IBM Langflow"
       },
       "sev": "high",
-      "days": 13,
+      "days": 14,
       "active": true,
       "desc": "Langflow contains a code injection vulnerability that allows unauthenticated attackers to achieve full remote code execution on default Langflow deployments."
     },
@@ -107,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · N-able N-central"
       },
       "sev": "high",
-      "days": 14,
+      "days": 15,
       "active": true,
       "desc": "N-able N-central contains an authentication bypass using an alternate path or channel allows for authentication bypass and account takeover in N-central. This vulnerability is the result of an incomplete patch for CVE-20"
     },
@@ -119,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · Cisco Secure Firewall Management Center (FMC)"
       },
       "sev": "high",
-      "days": 19,
+      "days": 20,
       "active": true,
       "desc": "Cisco Secure Firewall Management Center (FMC) formerly known as Firepower Management Center contains a use of hard-coded password vulnerability that could allow an unauthenticated, remote attacker to log in to an affecte"
     },
@@ -131,21 +143,9 @@
         "ru": "Эксплуатируемая уязвимость · Fortinet FortiOS"
       },
       "sev": "high",
-      "days": 21,
+      "days": 22,
       "active": true,
       "desc": "Fortinet FortiOS contains an exposure of sensitive information to an unauthorized actor vulnerability. This may allow a remote unauthenticated attacker to bypass the patch developed for the symbolic link persistency mech"
-    },
-    {
-      "name": "CVE-2026-16812",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Arista VeloCloud Orchestrator",
-        "ru": "Эксплуатируемая уязвимость · Arista VeloCloud Orchestrator"
-      },
-      "sev": "high",
-      "days": 21,
-      "active": true,
-      "desc": "Arista VeloCloud Orchestrator On-Prem contains an OS command injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compr"
     }
   ]
 }
