@@ -1,8 +1,20 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-08-19",
+  "updated": "2026-08-20",
   "items": [
+    {
+      "name": "CVE-2026-64849",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · MLflow MLflow",
+        "ru": "Эксплуатируемая уязвимость · MLflow MLflow"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "MLflow contains a server-side request forgery vulnerability that can allow attackers to reach internal or cloud metadata services and receive response_status and response_body."
+    },
     {
       "name": "CVE-2026-33824",
       "cat": "vulnerability",
@@ -11,7 +23,7 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft Internet Key Exchange (IKE) Service Extensions"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Microsoft Internet Key Exchange (IKE) Service Extensions contains a double free vulnerability that could enable remote code execution."
     },
@@ -23,7 +35,7 @@
         "ru": "Эксплуатируемая уязвимость · Broadcom VMware vCenter"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code."
     },
@@ -35,7 +47,7 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft SharePoint"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Microsoft SharePoint contains a weak authentication vulnerability which allows an unauthorized attacker to bypass a security feature over a network."
     },
@@ -47,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · Apple macOS"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Apple macOS contains an improper authentication vulnerability that could allow an attacker on the network to authenticate to Screen Sharing without valid credentials."
     },
@@ -59,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · Ray-Project Ray"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "Ray-Project Ray contains a code injection vulnerability that could allow remote code execution. Developers using Ray as a development tool may be exposed to this vulnerability exploitable through Firefox and Safari."
     },
@@ -71,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD)"
       },
       "sev": "high",
-      "days": 8,
+      "days": 9,
       "active": true,
       "desc": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) contain a heap inspection vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload "
     },
@@ -83,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft Windows Ancillary Function Driver for WinSock"
       },
       "sev": "high",
-      "days": 8,
+      "days": 9,
       "active": true,
       "desc": "Microsoft Windows Ancillary Function Driver for WinSock contains a use-after-free vulnerability that allows an authorized attacker to elevate privileges locally."
     },
@@ -95,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · Metabase Metabase"
       },
       "sev": "high",
-      "days": 8,
+      "days": 9,
       "active": true,
       "desc": "Metabase contains a SQL Injection vulnerability that allows an unauthenticated remote attacker to inject arbitrary SQL into the Metabase application database, which can give them administrator access to the instance. Fro"
     },
@@ -107,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · Progress LoadMaster"
       },
       "sev": "high",
-      "days": 12,
+      "days": 13,
       "active": true,
       "desc": "Progress LoadMaster contains a command injection vulnerability that allows an un-authenticated attacker to execute arbitrary commands on the LoadMaster appliance by exploiting unsanitized input in multiple command endpoi"
     },
@@ -119,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · JetBrains TeamCity"
       },
       "sev": "high",
-      "days": 14,
+      "days": 15,
       "active": true,
       "desc": "JetBrains TeamCity contains a deserialization of untrusted data vulnerability that could allow unauthenticated remote code execution via the agent polling protocol."
     },
@@ -131,21 +143,9 @@
         "ru": "Эксплуатируемая уязвимость · N-able N-central"
       },
       "sev": "high",
-      "days": 15,
+      "days": 16,
       "active": true,
       "desc": "N-able N-central contains an authentication bypass using an alternate path or channel that allows for authentication bypass."
-    },
-    {
-      "name": "CVE-2026-34486",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Apache Tomcat",
-        "ru": "Эксплуатируемая уязвимость · Apache Tomcat"
-      },
-      "sev": "high",
-      "days": 15,
-      "active": true,
-      "desc": "Apache Tomcat contains a missing encryption of sensitive data vulnerability that allows the bypass of the EncryptInterceptor. This vulnerability can be chained with CVE‑2025‑24813."
     }
   ]
 }
