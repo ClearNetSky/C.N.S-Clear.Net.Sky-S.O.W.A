@@ -1,7 +1,7 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-08-22",
+  "updated": "2026-08-23",
   "items": [
     {
       "name": "CVE-2026-73570",
@@ -11,7 +11,7 @@
         "ru": "Эксплуатируемая уязвимость · Synacor Zimbra Collaboration Suite (ZCS)"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Zimbra Collaboration Suite (ZCS) contains an OS command injection vulnerability which could allow an unauthenticated attacker to send specially crafted SMTP requests that may result in execution of arbitrary operating sy"
     },
@@ -23,7 +23,7 @@
         "ru": "Эксплуатируемая уязвимость · TrueConf Server"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "TrueConf Server contains a code injection vulnerability that could allow an unauthorized remote attacker with network access via port 4307/TCP to use a specially crafted script to break out of the isolated environment an"
     },
@@ -35,7 +35,7 @@
         "ru": "Эксплуатируемая уязвимость · TrueConf Server"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "TrueConf Server contains a missing authentication for critical function vulnerability which could allow a remote unauthorized attacker with network access via port 4307/TCP to execute an arbitrary script."
     },
@@ -47,7 +47,7 @@
         "ru": "Эксплуатируемая уязвимость · MLflow MLflow"
       },
       "sev": "high",
-      "days": 3,
+      "days": 4,
       "active": true,
       "desc": "MLflow contains a server-side request forgery vulnerability that can allow attackers to reach internal or cloud metadata services and receive response_status and response_body."
     },
@@ -59,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft Internet Key Exchange (IKE) Service Extensions"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "Microsoft Internet Key Exchange (IKE) Service Extensions contains a double free vulnerability that could enable remote code execution."
     },
@@ -71,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · Broadcom VMware vCenter"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code."
     },
@@ -83,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft SharePoint"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "Microsoft SharePoint contains a weak authentication vulnerability which allows an unauthorized attacker to bypass a security feature over a network."
     },
@@ -95,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · Apple macOS"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "Apple macOS contains an improper authentication vulnerability that could allow an attacker on the network to authenticate to Screen Sharing without valid credentials."
     },
@@ -107,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · Ray-Project Ray"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
       "desc": "Ray-Project Ray contains a code injection vulnerability that could allow remote code execution. Developers using Ray as a development tool may be exposed to this vulnerability exploitable through Firefox and Safari."
     },
@@ -119,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD)"
       },
       "sev": "high",
-      "days": 11,
+      "days": 12,
       "active": true,
       "desc": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) contain a heap inspection vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload "
     },
@@ -131,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft Windows Ancillary Function Driver for WinSock"
       },
       "sev": "high",
-      "days": 11,
+      "days": 12,
       "active": true,
       "desc": "Microsoft Windows Ancillary Function Driver for WinSock contains a use-after-free vulnerability that allows an authorized attacker to elevate privileges locally."
     },
@@ -143,7 +143,7 @@
         "ru": "Эксплуатируемая уязвимость · Metabase Metabase"
       },
       "sev": "high",
-      "days": 11,
+      "days": 12,
       "active": true,
       "desc": "Metabase contains a SQL Injection vulnerability that allows an unauthenticated remote attacker to inject arbitrary SQL into the Metabase application database, which can give them administrator access to the instance. Fro"
     }
