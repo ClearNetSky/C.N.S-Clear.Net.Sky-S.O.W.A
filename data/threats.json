@@ -1,8 +1,20 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-08-25",
+  "updated": "2026-08-26",
   "items": [
+    {
+      "name": "CVE-2026-60004",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Gitea Gitea",
+        "ru": "Эксплуатируемая уязвимость · Gitea Gitea"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Gitea contains a code injection vulnerability that allows an attacker with repository write access to send a malicious patch to the diffpatch API endpoint to plant an executable Git hook and run shell commands as the Git"
+    },
     {
       "name": "CVE-2026-21962",
       "cat": "vulnerability",
@@ -11,7 +23,7 @@
         "ru": "Эксплуатируемая уязвимость · Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in contain an improper access control vulnerability that can result in unauthorized creation, deletion or modification access to critical data as well as unauthori"
     },
@@ -23,7 +35,7 @@
         "ru": "Эксплуатируемая уязвимость · Synacor Zimbra Collaboration Suite (ZCS)"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "Zimbra Collaboration Suite (ZCS) contains an OS command injection vulnerability which could allow an unauthenticated attacker to send specially crafted SMTP requests that may result in execution of arbitrary operating sy"
     },
@@ -35,7 +47,7 @@
         "ru": "Эксплуатируемая уязвимость · TrueConf Server"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
       "desc": "TrueConf Server contains a code injection vulnerability that could allow an unauthorized remote attacker with network access via port 4307/TCP to use a specially crafted script to break out of the isolated environment an"
     },
@@ -47,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · TrueConf Server"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
       "desc": "TrueConf Server contains a missing authentication for critical function vulnerability which could allow a remote unauthorized attacker with network access via port 4307/TCP to execute an arbitrary script."
     },
@@ -59,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · MLflow MLflow"
       },
       "sev": "high",
-      "days": 6,
+      "days": 7,
       "active": true,
       "desc": "MLflow contains a server-side request forgery vulnerability that can allow attackers to reach internal or cloud metadata services and receive response_status and response_body."
     },
@@ -71,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft Internet Key Exchange (IKE) Service Extensions"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Microsoft Internet Key Exchange (IKE) Service Extensions contains a double free vulnerability that could enable remote code execution."
     },
@@ -83,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · Broadcom VMware vCenter"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code."
     },
@@ -95,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft SharePoint"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Microsoft SharePoint contains a weak authentication vulnerability which allows an unauthorized attacker to bypass a security feature over a network."
     },
@@ -107,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · Apple macOS"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Apple macOS contains an improper authentication vulnerability that could allow an attacker on the network to authenticate to Screen Sharing without valid credentials."
     },
@@ -119,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · Ray-Project Ray"
       },
       "sev": "high",
-      "days": 8,
+      "days": 9,
       "active": true,
       "desc": "Ray-Project Ray contains a code injection vulnerability that could allow remote code execution. Developers using Ray as a development tool may be exposed to this vulnerability exploitable through Firefox and Safari."
     },
@@ -131,21 +143,9 @@
         "ru": "Эксплуатируемая уязвимость · Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD)"
       },
       "sev": "high",
-      "days": 14,
+      "days": 15,
       "active": true,
       "desc": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) contain a heap inspection vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload "
-    },
-    {
-      "name": "CVE-2026-68820",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Microsoft Windows Ancillary Function Driver for WinSock",
-        "ru": "Эксплуатируемая уязвимость · Microsoft Windows Ancillary Function Driver for WinSock"
-      },
-      "sev": "high",
-      "days": 14,
-      "active": true,
-      "desc": "Microsoft Windows Ancillary Function Driver for WinSock contains a use-after-free vulnerability that allows an authorized attacker to elevate privileges locally."
     }
   ]
 }
