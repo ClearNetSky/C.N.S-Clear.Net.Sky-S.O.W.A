@@ -1,8 +1,20 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-09-04",
+  "updated": "2026-09-05",
   "items": [
+    {
+      "name": "CVE-2026-85046",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Google Chromium V8",
+        "ru": "Эксплуатируемая уязвимость · Google Chromium V8"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Google Chromium V8 contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that ut"
+    },
     {
       "name": "CVE-2026-59822",
       "cat": "vulnerability",
@@ -11,7 +23,7 @@
         "ru": "Эксплуатируемая уязвимость · BerriAI LiteLLM"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "BerriAI LiteLLM contains an improper authentication vulnerability in the MCP Streamable HTTP endpoint that could allow an unauthenticated attacker to establish an authenticated MCP session using an arbitrary Bearer token"
     },
@@ -23,7 +35,7 @@
         "ru": "Эксплуатируемая уязвимость · Kludex Starlette"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "Kludex Starlette contains a HTTP request/response smuggling vulnerability that could allow attackers to inject paths into the host part, prepending the actual path leading to issues such as authentication bypass when the"
     },
@@ -35,7 +47,7 @@
         "ru": "Эксплуатируемая уязвимость · Kestra Kestra OSS"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "Kestra OSS contains an OS command injection vulnerability that could allow an unauthenticated remote attacker to create and execute arbitrary workflows without credentials."
     },
@@ -47,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · JFrog Artifactory"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "JFrog Artifactory contains an improper authentication vulnerability that under default configuration can allow an unauthenticated attacker with network access to obtain administrative privileges."
     },
@@ -59,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · Sangoma Switchvox"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "Sangoma Switchvox contains a SQL injection vulnerability which allows an unauthenticated remote attacker to execute arbitrary SQL statements against the backend PostgreSQL database using a single crafted request, includi"
     },
@@ -71,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · SonicWall SMA1000 Appliances"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "SonicWall SMA1000 Appliances contains a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to gain unauthorized access to sensitive functionality and perform unauthorized operati"
     },
@@ -83,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · SonicWall SMA1000 Appliances"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "SonicWall SMA1000 Appliances contains an OS command injection vulnerability that could enable a remote authenticated attacker as administrator to execute arbitrary OS commands, resulting in remote code execution."
     },
@@ -95,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · PaperCut NG/MF"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "PaperCut NG/MF contains an unsafe reflection vulnerability that allows an attacker to manipulate system configuration parameters and execute arbitrary Java bytecode residing on the application classpath under the securit"
     },
@@ -107,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · PaperCut NG/MF"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "PaperCut NG/MF contains a missing authentication for critical function vulnerability which allows an unauthenticated remote attacker to modify certain system configurations. This vulnerability can be chained with CVE-202"
     },
@@ -119,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · ownCloud ownCloud"
       },
       "sev": "high",
-      "days": 8,
+      "days": 9,
       "active": true,
       "desc": "ownCloud contains an improper authentication vulnerability that allows an attacker to access, modify, or delete any file without authentication if the username of a victim is known, and the victim has no signing-key conf"
     },
@@ -131,21 +143,9 @@
         "ru": "Эксплуатируемая уязвимость · Linux Kernel"
       },
       "sev": "high",
-      "days": 8,
+      "days": 9,
       "active": true,
       "desc": "Linux Kernel contains an unspecified vulnerability that can allow for privilege escalation via IPv6 networking subsystem. This vulnerability can impact multiple products, including but not limited to Suse, Red Hat, and o"
-    },
-    {
-      "name": "CVE-2026-66384",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · JFrog Artifactory",
-        "ru": "Эксплуатируемая уязвимость · JFrog Artifactory"
-      },
-      "sev": "high",
-      "days": 8,
-      "active": true,
-      "desc": "JFrog Artifactory contains an improper limitation of a pathname to a restricted directory vulnerability. This can allow an authenticated user to write data outside the intended Docker cache path under specific remote-rep"
     }
   ]
 }
