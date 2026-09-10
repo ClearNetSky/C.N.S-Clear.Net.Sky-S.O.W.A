@@ -1,8 +1,56 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-09-09",
+  "updated": "2026-09-10",
   "items": [
+    {
+      "name": "CVE-2026-19490",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Citrix NetScaler",
+        "ru": "Эксплуатируемая уязвимость · Citrix NetScaler"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Citrix NetScaler ADC and NetScaler Gateway contain an authentication-bypass vulnerability involving an alternate path or channel. When the NetScaler appliance is configured as an AAA virtual server or as a Gateway (SSL V"
+    },
+    {
+      "name": "CVE-2025-25249",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Fortinet Multiple Products",
+        "ru": "Эксплуатируемая уязвимость · Fortinet Multiple Products"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets."
+    },
+    {
+      "name": "CVE-2026-87491",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Google Chromium V8",
+        "ru": "Эксплуатируемая уязвимость · Google Chromium V8"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers t"
+    },
+    {
+      "name": "CVE-2026-20079",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Cisco Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management",
+        "ru": "Эксплуатируемая уязвимость · Cisco Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Cisco Secure Firewall Management Center (FMC) Software and Cisco Security Cloud Control (SCC) Firewall Management contain an authentication Bypass using an alternate path or channel vulnerability that could allow an unau"
+    },
     {
       "name": "CVE-2026-75650",
       "cat": "vulnerability",
@@ -11,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · Adobe Commerce and Magento"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Adobe Commerce and Magento Open Source contain an improper neutralization of special elements used in a template engine vulnerability that could allow an attacker to execute arbitrary code."
     },
@@ -23,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft Windows"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Microsoft Windows Update Stack contains a link following vulnerability that allows a local attacker to escalate privileges locally up to SYSTEM."
     },
@@ -35,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · N-able N-central"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "N-able N-central contains a static code injection vulnerability that could allow for pre-authentication remote code execution."
     },
@@ -47,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft Windows"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Microsoft Windows Advanced Local Procedure Call contains a heap-based buffer overflow vulnerability that allows an attacker to elevate privileges locally."
     },
@@ -59,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · Google Chromium V8"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
       "desc": "Google Chromium V8 contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that ut"
     },
@@ -71,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · BerriAI LiteLLM"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "BerriAI LiteLLM contains an improper authentication vulnerability in the MCP Streamable HTTP endpoint that could allow an unauthenticated attacker to establish an authenticated MCP session using an arbitrary Bearer token"
     },
@@ -83,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · Kludex Starlette"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Kludex Starlette contains a HTTP request/response smuggling vulnerability that could allow attackers to inject paths into the host part, prepending the actual path leading to issues such as authentication bypass when the"
     },
@@ -95,57 +143,9 @@
         "ru": "Эксплуатируемая уязвимость · Kestra Kestra OSS"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Kestra OSS contains an OS command injection vulnerability that could allow an unauthenticated remote attacker to create and execute arbitrary workflows without credentials."
-    },
-    {
-      "name": "CVE-2026-82329",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · JFrog Artifactory",
-        "ru": "Эксплуатируемая уязвимость · JFrog Artifactory"
-      },
-      "sev": "high",
-      "days": 7,
-      "active": true,
-      "desc": "JFrog Artifactory contains an improper authentication vulnerability that under default configuration can allow an unauthenticated attacker with network access to obtain administrative privileges."
-    },
-    {
-      "name": "CVE-2026-9586",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Sangoma Switchvox",
-        "ru": "Эксплуатируемая уязвимость · Sangoma Switchvox"
-      },
-      "sev": "high",
-      "days": 7,
-      "active": true,
-      "desc": "Sangoma Switchvox contains a SQL injection vulnerability which allows an unauthenticated remote attacker to execute arbitrary SQL statements against the backend PostgreSQL database using a single crafted request, includi"
-    },
-    {
-      "name": "CVE-2026-83548",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · SonicWall SMA1000 Appliances",
-        "ru": "Эксплуатируемая уязвимость · SonicWall SMA1000 Appliances"
-      },
-      "sev": "high",
-      "days": 7,
-      "active": true,
-      "desc": "SonicWall SMA1000 Appliances contains a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to gain unauthorized access to sensitive functionality and perform unauthorized operati"
-    },
-    {
-      "name": "CVE-2026-83549",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · SonicWall SMA1000 Appliances",
-        "ru": "Эксплуатируемая уязвимость · SonicWall SMA1000 Appliances"
-      },
-      "sev": "high",
-      "days": 7,
-      "active": true,
-      "desc": "SonicWall SMA1000 Appliances contains an OS command injection vulnerability that could enable a remote authenticated attacker as administrator to execute arbitrary OS commands, resulting in remote code execution."
     }
   ]
 }
