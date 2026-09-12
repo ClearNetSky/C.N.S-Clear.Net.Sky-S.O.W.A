@@ -1,8 +1,56 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-09-11",
+  "updated": "2026-09-12",
   "items": [
+    {
+      "name": "CVE-2026-84869",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · ConnectWise ScreenConnect",
+        "ru": "Эксплуатируемая уязвимость · ConnectWise ScreenConnect"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to file transfer and execution through an active remote sessions without authori"
+    },
+    {
+      "name": "CVE-2026-42016",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · JFrog Artifactory",
+        "ru": "Эксплуатируемая уязвимость · JFrog Artifactory"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "JFrog Artifactory contains an incorrect authorization vulnerability that allows leads to privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope."
+    },
+    {
+      "name": "CVE-2026-42018",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · JFrog Artifactory",
+        "ru": "Эксплуатируемая уязвимость · JFrog Artifactory"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "JFrog Artifactory contains an improper authentication vulnerability that could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially exposing sensitive resour"
+    },
+    {
+      "name": "CVE-2026-85706",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · GitLab Community Edition and Enterprise Edition",
+        "ru": "Эксплуатируемая уязвимость · GitLab Community Edition and Enterprise Edition"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "GitLab Community Edition and Enterprise Edition contains a path traversal vulnerability that allows an unauthenticated user to read arbitrary files due to an improper path confinement and missing authentication enforceme"
+    },
     {
       "name": "CVE-2026-86060",
       "cat": "vulnerability",
@@ -11,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · MikroTik RouterOS"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "MikroTik RouterOS contains an improper neutralization of argument delimiters in a command vulnerability which allows an attacked to change the trusted RouterOS policy mask, leading to privilege escalation."
     },
@@ -23,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · MikroTik RouterOS"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "MikroTik RouterOS contains a missing authenticaion for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service."
     },
@@ -35,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · Citrix NetScaler"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "Citrix NetScaler ADC and NetScaler Gateway contain an authentication-bypass vulnerability involving an alternate path or channel. When the NetScaler appliance is configured as an AAA virtual server or as a Gateway (SSL V"
     },
@@ -47,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · Fortinet Multiple Products"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets."
     },
@@ -59,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · Google Chromium V8"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers t"
     },
@@ -71,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · Cisco Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "Cisco Secure Firewall Management Center (FMC) Software and Cisco Security Cloud Control (SCC) Firewall Management contain an authentication Bypass using an alternate path or channel vulnerability that could allow an unau"
     },
@@ -83,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · Adobe Commerce and Magento"
       },
       "sev": "high",
-      "days": 3,
+      "days": 4,
       "active": true,
       "desc": "Adobe Commerce and Magento Open Source contain an improper neutralization of special elements used in a template engine vulnerability that could allow an attacker to execute arbitrary code."
     },
@@ -95,57 +143,9 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft Windows"
       },
       "sev": "high",
-      "days": 3,
+      "days": 4,
       "active": true,
       "desc": "Microsoft Windows Update Stack contains a link following vulnerability that allows a local attacker to escalate privileges locally up to SYSTEM."
-    },
-    {
-      "name": "CVE-2026-86218",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · N-able N-central",
-        "ru": "Эксплуатируемая уязвимость · N-able N-central"
-      },
-      "sev": "high",
-      "days": 3,
-      "active": true,
-      "desc": "N-able N-central contains a static code injection vulnerability that could allow for pre-authentication remote code execution."
-    },
-    {
-      "name": "CVE-2026-85880",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Microsoft Windows",
-        "ru": "Эксплуатируемая уязвимость · Microsoft Windows"
-      },
-      "sev": "high",
-      "days": 3,
-      "active": true,
-      "desc": "Microsoft Windows Advanced Local Procedure Call contains a heap-based buffer overflow vulnerability that allows an attacker to elevate privileges locally."
-    },
-    {
-      "name": "CVE-2026-85046",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Google Chromium V8",
-        "ru": "Эксплуатируемая уязвимость · Google Chromium V8"
-      },
-      "sev": "high",
-      "days": 7,
-      "active": true,
-      "desc": "Google Chromium V8 contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that ut"
-    },
-    {
-      "name": "CVE-2026-59822",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · BerriAI LiteLLM",
-        "ru": "Эксплуатируемая уязвимость · BerriAI LiteLLM"
-      },
-      "sev": "high",
-      "days": 9,
-      "active": true,
-      "desc": "BerriAI LiteLLM contains an improper authentication vulnerability in the MCP Streamable HTTP endpoint that could allow an unauthenticated attacker to establish an authenticated MCP session using an arbitrary Bearer token"
     }
   ]
 }
