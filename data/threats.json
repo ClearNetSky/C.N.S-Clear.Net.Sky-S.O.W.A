@@ -1,8 +1,44 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-09-16",
+  "updated": "2026-09-17",
   "items": [
+    {
+      "name": "CVE-2026-58704",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Google Pixel",
+        "ru": "Эксплуатируемая уязвимость · Google Pixel"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Google Pixel devices contain an improper authorization vulnerability in the cellular modem. A logic error may allow an attacker to bypass permission checks and escalate privileges."
+    },
+    {
+      "name": "CVE-2026-76460",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Cisco Identity Services Engine",
+        "ru": "Эксплуатируемая уязвимость · Cisco Identity Services Engine"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) contain an incorrect use of privileged APIs vulnerability that could allow an unauthenticated, remote attacker to gain unauthorized "
+    },
+    {
+      "name": "CVE-2026-87886",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Acronis Backup",
+        "ru": "Эксплуатируемая уязвимость · Acronis Backup"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Acronis Backup plugin for cPanel & WHM and extension for Plesk contains an incorrect default permissions vulnerability that could allow for privilege escalation."
+    },
     {
       "name": "CVE-2026-76461",
       "cat": "vulnerability",
@@ -11,7 +47,7 @@
         "ru": "Эксплуатируемая уязвимость · Cisco Secure Email Gateway"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "Cisco AsyncOS software for Cisco Secure Email Gateway (SEG) contains a SQL injection vulnerability that could allow an unauthenticated, remote attacker to execute arbitrary commands with root privileges on the underlying"
     },
@@ -23,9 +59,9 @@
         "ru": "Эксплуатируемая уязвимость · ConnectWise ScreenConnect"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
-      "desc": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to file transfer and execution through an active remote sessions without authori"
+      "desc": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to transfer and execute files through an active remote session without authoriza"
     },
     {
       "name": "CVE-2026-42016",
@@ -35,9 +71,9 @@
         "ru": "Эксплуатируемая уязвимость · JFrog Artifactory"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
-      "desc": "JFrog Artifactory contains an incorrect authorization vulnerability that allows leads to privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope."
+      "desc": "JFrog Artifactory contains an incorrect authorization vulnerability that leads to a privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope."
     },
     {
       "name": "CVE-2026-42018",
@@ -47,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · JFrog Artifactory"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
       "desc": "JFrog Artifactory contains an improper authentication vulnerability that could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially exposing sensitive resour"
     },
@@ -59,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · GitLab Community Edition and Enterprise Edition"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
       "desc": "GitLab Community Edition and Enterprise Edition contains a path traversal vulnerability that allows an unauthenticated user to read arbitrary files due to an improper path confinement and missing authentication enforceme"
     },
@@ -71,9 +107,9 @@
         "ru": "Эксплуатируемая уязвимость · MikroTik RouterOS"
       },
       "sev": "high",
-      "days": 6,
+      "days": 7,
       "active": true,
-      "desc": "MikroTik RouterOS contains an improper neutralization of argument delimiters in a command vulnerability which allows an attacked to change the trusted RouterOS policy mask, leading to privilege escalation."
+      "desc": "MikroTik RouterOS contains an improper neutralization of argument delimiters in a command vulnerability which allows an attacker to change the trusted RouterOS policy mask, leading to privilege escalation."
     },
     {
       "name": "CVE-2026-67277",
@@ -83,9 +119,9 @@
         "ru": "Эксплуатируемая уязвимость · MikroTik RouterOS"
       },
       "sev": "high",
-      "days": 6,
+      "days": 7,
       "active": true,
-      "desc": "MikroTik RouterOS contains a missing authenticaion for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service."
+      "desc": "MikroTik RouterOS contains a missing authentication for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service."
     },
     {
       "name": "CVE-2026-19490",
@@ -95,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · Citrix NetScaler"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Citrix NetScaler ADC and NetScaler Gateway contain an authentication-bypass vulnerability involving an alternate path or channel. When the NetScaler appliance is configured as an AAA virtual server or as a Gateway (SSL V"
     },
@@ -107,45 +143,9 @@
         "ru": "Эксплуатируемая уязвимость · Fortinet Multiple Products"
       },
       "sev": "high",
-      "days": 7,
-      "active": true,
-      "desc": "Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets."
-    },
-    {
-      "name": "CVE-2026-87491",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Google Chromium V8",
-        "ru": "Эксплуатируемая уязвимость · Google Chromium V8"
-      },
-      "sev": "high",
-      "days": 7,
-      "active": true,
-      "desc": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers t"
-    },
-    {
-      "name": "CVE-2026-20079",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Cisco Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management",
-        "ru": "Эксплуатируемая уязвимость · Cisco Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management"
-      },
-      "sev": "high",
-      "days": 7,
-      "active": true,
-      "desc": "Cisco Secure Firewall Management Center (FMC) Software and Cisco Security Cloud Control (SCC) Firewall Management contain an authentication Bypass using an alternate path or channel vulnerability that could allow an unau"
-    },
-    {
-      "name": "CVE-2026-75650",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Adobe Commerce and Magento",
-        "ru": "Эксплуатируемая уязвимость · Adobe Commerce and Magento"
-      },
-      "sev": "high",
       "days": 8,
       "active": true,
-      "desc": "Adobe Commerce and Magento Open Source contain an improper neutralization of special elements used in a template engine vulnerability that could allow an attacker to execute arbitrary code."
+      "desc": "Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets."
     }
   ]
 }
