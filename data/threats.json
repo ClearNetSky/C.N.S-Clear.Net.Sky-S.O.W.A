@@ -1,7 +1,7 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-09-17",
+  "updated": "2026-09-18",
   "items": [
     {
       "name": "CVE-2026-58704",
@@ -11,7 +11,7 @@
         "ru": "Эксплуатируемая уязвимость · Google Pixel"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Google Pixel devices contain an improper authorization vulnerability in the cellular modem. A logic error may allow an attacker to bypass permission checks and escalate privileges."
     },
@@ -23,7 +23,7 @@
         "ru": "Эксплуатируемая уязвимость · Cisco Identity Services Engine"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) contain an incorrect use of privileged APIs vulnerability that could allow an unauthenticated, remote attacker to gain unauthorized "
     },
@@ -35,7 +35,7 @@
         "ru": "Эксплуатируемая уязвимость · Acronis Backup"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Acronis Backup plugin for cPanel & WHM and extension for Plesk contains an incorrect default permissions vulnerability that could allow for privilege escalation."
     },
@@ -47,7 +47,7 @@
         "ru": "Эксплуатируемая уязвимость · Cisco Secure Email Gateway"
       },
       "sev": "high",
-      "days": 3,
+      "days": 4,
       "active": true,
       "desc": "Cisco AsyncOS software for Cisco Secure Email Gateway (SEG) contains a SQL injection vulnerability that could allow an unauthenticated, remote attacker to execute arbitrary commands with root privileges on the underlying"
     },
@@ -59,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · ConnectWise ScreenConnect"
       },
       "sev": "high",
-      "days": 6,
+      "days": 7,
       "active": true,
       "desc": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to transfer and execute files through an active remote session without authoriza"
     },
@@ -71,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · JFrog Artifactory"
       },
       "sev": "high",
-      "days": 6,
+      "days": 7,
       "active": true,
       "desc": "JFrog Artifactory contains an incorrect authorization vulnerability that leads to a privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope."
     },
@@ -83,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · JFrog Artifactory"
       },
       "sev": "high",
-      "days": 6,
+      "days": 7,
       "active": true,
       "desc": "JFrog Artifactory contains an improper authentication vulnerability that could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially exposing sensitive resour"
     },
@@ -95,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · GitLab Community Edition and Enterprise Edition"
       },
       "sev": "high",
-      "days": 6,
+      "days": 7,
       "active": true,
       "desc": "GitLab Community Edition and Enterprise Edition contains a path traversal vulnerability that allows an unauthenticated user to read arbitrary files due to an improper path confinement and missing authentication enforceme"
     },
@@ -107,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · MikroTik RouterOS"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "MikroTik RouterOS contains an improper neutralization of argument delimiters in a command vulnerability which allows an attacker to change the trusted RouterOS policy mask, leading to privilege escalation."
     },
@@ -119,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · MikroTik RouterOS"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "MikroTik RouterOS contains a missing authentication for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service."
     },
@@ -131,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · Citrix NetScaler"
       },
       "sev": "high",
-      "days": 8,
+      "days": 9,
       "active": true,
       "desc": "Citrix NetScaler ADC and NetScaler Gateway contain an authentication-bypass vulnerability involving an alternate path or channel. When the NetScaler appliance is configured as an AAA virtual server or as a Gateway (SSL V"
     },
@@ -143,7 +143,7 @@
         "ru": "Эксплуатируемая уязвимость · Fortinet Multiple Products"
       },
       "sev": "high",
-      "days": 8,
+      "days": 9,
       "active": true,
       "desc": "Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets."
     }
