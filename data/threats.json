@@ -1,7 +1,7 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-09-20",
+  "updated": "2026-09-21",
   "items": [
     {
       "name": "CVE-2025-39964",
@@ -11,7 +11,7 @@
         "ru": "Эксплуатируемая уязвимость · Linux Kernel"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "Linux Kernel contains a race condition vulnerability which allows concurrent writes to the same AF_ALG socket causing data to be unpredictably interleaved and creating inconsistencies in the socket's internal state."
     },
@@ -23,7 +23,7 @@
         "ru": "Эксплуатируемая уязвимость · Linux Kernel"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "Linux Kernel contains an out-of-bounds write vulnerability in the ebtables SNAT target which allows an ARP sender hardware address rewrite to write directly into a nonlinear socket-buffer fragment backed by a splice-impo"
     },
@@ -35,7 +35,7 @@
         "ru": "Эксплуатируемая уязвимость · Linux Kernel"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "Linux Kernel contains an improper check for unusual or exceptional conditions vulnerability in the TLS receive path which allows a zero-length record retrieved from the rx_list to bypass the intended recvmsg() record-typ"
     },
@@ -47,7 +47,7 @@
         "ru": "Эксплуатируемая уязвимость · Google Pixel"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "Google Pixel devices contain an improper authorization vulnerability in the cellular modem. A logic error may allow an attacker to bypass permission checks and escalate privileges."
     },
@@ -59,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · Cisco Identity Services Engine"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) contain an incorrect use of privileged APIs vulnerability that could allow an unauthenticated, remote attacker to gain unauthorized "
     },
@@ -71,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · Acronis Backup"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "Acronis Backup plugin for cPanel & WHM and extension for Plesk contains an incorrect default permissions vulnerability that could allow for privilege escalation."
     },
@@ -83,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · Cisco Secure Email Gateway"
       },
       "sev": "high",
-      "days": 6,
+      "days": 7,
       "active": true,
       "desc": "Cisco AsyncOS software for Cisco Secure Email Gateway (SEG) contains a SQL injection vulnerability that could allow an unauthenticated, remote attacker to execute arbitrary commands with root privileges on the underlying"
     },
@@ -95,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · ConnectWise ScreenConnect"
       },
       "sev": "high",
-      "days": 9,
+      "days": 10,
       "active": true,
       "desc": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to transfer and execute files through an active remote session without authoriza"
     },
@@ -107,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · JFrog Artifactory"
       },
       "sev": "high",
-      "days": 9,
+      "days": 10,
       "active": true,
       "desc": "JFrog Artifactory contains an incorrect authorization vulnerability that leads to a privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope."
     },
@@ -119,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · JFrog Artifactory"
       },
       "sev": "high",
-      "days": 9,
+      "days": 10,
       "active": true,
       "desc": "JFrog Artifactory contains an improper authentication vulnerability that could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially exposing sensitive resour"
     },
@@ -131,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · GitLab Community Edition and Enterprise Edition"
       },
       "sev": "high",
-      "days": 9,
+      "days": 10,
       "active": true,
       "desc": "GitLab Community Edition and Enterprise Edition contains a path traversal vulnerability that allows an unauthenticated user to read arbitrary files due to an improper path confinement and missing authentication enforceme"
     },
@@ -143,7 +143,7 @@
         "ru": "Эксплуатируемая уязвимость · MikroTik RouterOS"
       },
       "sev": "high",
-      "days": 10,
+      "days": 11,
       "active": true,
       "desc": "MikroTik RouterOS contains an improper neutralization of argument delimiters in a command vulnerability which allows an attacker to change the trusted RouterOS policy mask, leading to privilege escalation."
     }
