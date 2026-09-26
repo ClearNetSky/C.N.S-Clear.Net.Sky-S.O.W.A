@@ -1,8 +1,44 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "items": [
+    {
+      "name": "CVE-2026-67279",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · MikroTik RouterOS",
+        "ru": "Эксплуатируемая уязвимость · MikroTik RouterOS"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Mikrotik RouterOS contains an improper enforcement of behavioral workflow vulnerability that could allow an unauthenticated client to open a session channel and send an exec request. This vulnerability can be chained to "
+    },
+    {
+      "name": "CVE-2026-65660",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Microsoft SharePoint",
+        "ru": "Эксплуатируемая уязвимость · Microsoft SharePoint"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Microsoft SharePoint contains a code injection vulnerability which could allow an authorized attacker to execute code over a network."
+    },
+    {
+      "name": "CVE-2026-87902",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · WordPress Core",
+        "ru": "Эксплуатируемая уязвимость · WordPress Core"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "WordPress Core contains a remote file inclusion vulnerability which could allow an unauthenticated attacker to make page-template resolution include a chosen readable local `.php` file outside the active theme directorie"
+    },
     {
       "name": "CVE-2026-5430",
       "cat": "vulnerability",
@@ -11,7 +47,7 @@
         "ru": "Эксплуатируемая уязвимость · WSO2 Multiple Products"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "WSO2 API Control Plane, API Manager, Traffic Manager & Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution."
     },
@@ -23,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · Adobe Commerce and Magento"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Adobe Commerce and Magento contains an incorrect authorization vulnerability that could allow an attacker to leverage this vulnerability to gain elevated access to sensitive resources without any user interaction."
     },
@@ -35,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · Arista VeloCloud Orchestrator"
       },
       "sev": "high",
-      "days": 3,
+      "days": 4,
       "active": true,
       "desc": "Arista VeloCloud Orchestrator (VCO) on-prem contains an improper input validation vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitatio"
     },
@@ -47,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · F5 BIG-IP APM"
       },
       "sev": "high",
-      "days": 3,
+      "days": 4,
       "active": true,
       "desc": "F5 BIG-IP APM contains a heap-based buffer overflow vulnerability when access policy and an OAuth profile are configured on a virtual server. This vulnerability could allow an unauthenticated attacker to perform remote c"
     },
@@ -59,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · Check Point Multiple Products"
       },
       "sev": "high",
-      "days": 3,
+      "days": 4,
       "active": true,
       "desc": "Check Point Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server, and SmartEvent contain a path traversal vulnerability that allows an unauthenticated attacker to uploa"
     },
@@ -71,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · Check Point Multiple Products"
       },
       "sev": "high",
-      "days": 3,
+      "days": 4,
       "active": true,
       "desc": "Check Point Security Gateway and Check Point Spark Firewall using Site to Site VPN or Remote Access VPN contain an improper certificate validation vulnerability which could allow an unauthenticated remote attacker to exe"
     },
@@ -83,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · Zyxel GS1900 Series Switches"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a cr"
     },
@@ -95,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · Linux Kernel"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Linux Kernel contains a race condition vulnerability which allows concurrent writes to the same AF_ALG socket causing data to be unpredictably interleaved and creating inconsistencies in the socket's internal state."
     },
@@ -107,45 +143,9 @@
         "ru": "Эксплуатируемая уязвимость · Linux Kernel"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Linux Kernel contains an out-of-bounds write vulnerability in the ebtables SNAT target which allows an ARP sender hardware address rewrite to write directly into a nonlinear socket-buffer fragment backed by a splice-impo"
-    },
-    {
-      "name": "CVE-2025-39682",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Linux Kernel",
-        "ru": "Эксплуатируемая уязвимость · Linux Kernel"
-      },
-      "sev": "high",
-      "days": 7,
-      "active": true,
-      "desc": "Linux Kernel contains an improper check for unusual or exceptional conditions vulnerability in the TLS receive path which allows a zero-length record retrieved from the rx_list to bypass the intended recvmsg() record-typ"
-    },
-    {
-      "name": "CVE-2026-58704",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Google Pixel",
-        "ru": "Эксплуатируемая уязвимость · Google Pixel"
-      },
-      "sev": "high",
-      "days": 9,
-      "active": true,
-      "desc": "Google Pixel devices contain an improper authorization vulnerability in the cellular modem. A logic error may allow an attacker to bypass permission checks and escalate privileges."
-    },
-    {
-      "name": "CVE-2026-76460",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Cisco Identity Services Engine",
-        "ru": "Эксплуатируемая уязвимость · Cisco Identity Services Engine"
-      },
-      "sev": "high",
-      "days": 9,
-      "active": true,
-      "desc": "Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) contain an incorrect use of privileged APIs vulnerability that could allow an unauthenticated, remote attacker to gain unauthorized "
     }
   ]
 }
