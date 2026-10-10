@@ -1,7 +1,7 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-10-09",
+  "updated": "2026-10-10",
   "items": [
     {
       "name": "CVE-2015-5477",
@@ -11,7 +11,7 @@
         "ru": "Эксплуатируемая уязвимость · ISC BIND"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "ISC BIND contains a data processing errors vulnerability that could allow remote attackers to cause a denial of service via TKEY queries."
     },
@@ -23,7 +23,7 @@
         "ru": "Эксплуатируемая уязвимость · Apache Struts"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Apache Struts contains a command injection vulnerability that could allow remote attackers to execute arbitrary code via method:prefix when Dynamic Method Invocation is enabled."
     },
@@ -35,7 +35,7 @@
         "ru": "Эксплуатируемая уязвимость · Strapi Strapi"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s) could "
     },
@@ -47,7 +47,7 @@
         "ru": "Эксплуатируемая уязвимость · ONLYOFFICE Docs"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "ONLYOFFICE Docs contains a path traversal vulnerability that can occur when JWT is used, via a /.. sequence in an image upload parameter and could allow for remote code execution."
     },
@@ -59,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · ProFTPD ProFTPD"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "ProFTPD contains an improper access control vulnerability that could allow remote attackers to read and write to arbitrary files via the site cpfr and site cpto commands."
     },
@@ -71,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · Citrix NetScaler"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
       "desc": "Citrix NetScaler ADC (formerly Citrix ADC) and Citrix NetScaler Gateway (formerly Citrix Gateway) contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for a de"
     },
@@ -83,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · Zammad GmbH Zammad"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Zammad GmbH Zammad contains an improper privilege management vulnerability that can allow the local zammad user to escalate privileges to root. This vulnerability can be chained with CVE-2026-102489."
     },
@@ -95,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · Zammad GmbH Zammad"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Zammad GmbH Zammad contains a session fixation vulnerability that can lead to remote code execution as the zammad user. This vulnerability can be chained with CVE-2026-102490."
     },
@@ -107,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · Fortinet FortiMail"
       },
       "sev": "high",
-      "days": 8,
+      "days": 9,
       "active": true,
       "desc": "Fortinet FortiMail contains a path traversal and an improper neutralization of NULL byte or NULL character vulnerability that may allow an unauthenticated attacker to write arbitrary files on the underlying system via cr"
     },
@@ -119,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · Cisco Catalyst SD-WAN Manager"
       },
       "sev": "high",
-      "days": 9,
+      "days": 10,
       "active": true,
       "desc": "Cisco Catalyst SD-WAN Manager contains a hex encoding vulnerability that could allow an unauthenticated, remote attacker to access an affected system with privileges of the admin user due to improper handling of URI enco"
     },
@@ -131,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · Apple Multiple Products"
       },
       "sev": "high",
-      "days": 10,
+      "days": 11,
       "active": true,
       "desc": "Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution."
     },
@@ -143,7 +143,7 @@
         "ru": "Эксплуатируемая уязвимость · Citrix NetScaler"
       },
       "sev": "high",
-      "days": 12,
+      "days": 13,
       "active": true,
       "desc": "Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for remote code execution or denial of service"
     }
