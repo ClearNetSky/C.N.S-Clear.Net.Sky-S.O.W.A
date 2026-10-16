@@ -1,8 +1,20 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "items": [
+    {
+      "name": "CVE-2026-21589",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Atlassian Multiple Products",
+        "ru": "Эксплуатируемая уязвимость · Atlassian Multiple Products"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or "
+    },
     {
       "name": "CVE-2026-105134",
       "cat": "vulnerability",
@@ -11,7 +23,7 @@
         "ru": "Эксплуатируемая уязвимость · Ahsay AhsayCBS"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/"
     },
@@ -23,7 +35,7 @@
         "ru": "Эксплуатируемая уязвимость · Cisco Secure Email Gateway"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system."
     },
@@ -35,7 +47,7 @@
         "ru": "Эксплуатируемая уязвимость · Ahsay AhsayCBS"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component’s checkSysPwd function. This vuln"
     },
@@ -47,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · Palo Alto Networks PAN-OS"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall."
     },
@@ -59,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · Ivanti Connect Secure"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands."
     },
@@ -71,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft Windows"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network."
     },
@@ -83,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · ISC BIND"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "ISC BIND contains a data processing errors vulnerability that could allow remote attackers to cause a denial of service via TKEY queries."
     },
@@ -95,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · Apache Struts"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Apache Struts contains a command injection vulnerability that could allow remote attackers to execute arbitrary code via method:prefix when Dynamic Method Invocation is enabled."
     },
@@ -107,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · Strapi Strapi"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s) could "
     },
@@ -119,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · ONLYOFFICE Docs"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "ONLYOFFICE Docs contains a path traversal vulnerability that can occur when JWT is used, via a /.. sequence in an image upload parameter and could allow for remote code execution."
     },
@@ -131,21 +143,9 @@
         "ru": "Эксплуатируемая уязвимость · ProFTPD ProFTPD"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "ProFTPD contains an improper access control vulnerability that could allow remote attackers to read and write to arbitrary files via the site cpfr and site cpto commands."
-    },
-    {
-      "name": "CVE-2026-88779",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Citrix NetScaler",
-        "ru": "Эксплуатируемая уязвимость · Citrix NetScaler"
-      },
-      "sev": "high",
-      "days": 11,
-      "active": true,
-      "desc": "Citrix NetScaler ADC (formerly Citrix ADC) and Citrix NetScaler Gateway (formerly Citrix Gateway) contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for a de"
     }
   ]
 }
