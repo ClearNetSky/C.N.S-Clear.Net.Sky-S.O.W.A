@@ -1,7 +1,7 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "items": [
     {
       "name": "CVE-2026-102764",
@@ -11,7 +11,7 @@
         "ru": "Эксплуатируемая уязвимость · BeyondTrust Remote Support"
       },
       "sev": "high",
-      "days": 3,
+      "days": 4,
       "active": true,
       "desc": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance."
     },
@@ -23,7 +23,7 @@
         "ru": "Эксплуатируемая уязвимость · Fortinet Multiple Products"
       },
       "sev": "high",
-      "days": 3,
+      "days": 4,
       "active": true,
       "desc": "FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary fi"
     },
@@ -35,7 +35,7 @@
         "ru": "Эксплуатируемая уязвимость · Atlassian Multiple Products"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or "
     },
@@ -47,7 +47,7 @@
         "ru": "Эксплуатируемая уязвимость · Ahsay AhsayCBS"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
       "desc": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/"
     },
@@ -59,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · Cisco Secure Email Gateway"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
       "desc": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system."
     },
@@ -71,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · Ahsay AhsayCBS"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
       "desc": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component’s checkSysPwd function. This vuln"
     },
@@ -83,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · Palo Alto Networks PAN-OS"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
       "desc": "Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall."
     },
@@ -95,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · Ivanti Connect Secure"
       },
       "sev": "high",
-      "days": 6,
+      "days": 7,
       "active": true,
       "desc": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands."
     },
@@ -107,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft Windows"
       },
       "sev": "high",
-      "days": 6,
+      "days": 7,
       "active": true,
       "desc": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network."
     },
@@ -119,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · ISC BIND"
       },
       "sev": "high",
-      "days": 11,
+      "days": 12,
       "active": true,
       "desc": "ISC BIND contains a data processing errors vulnerability that could allow remote attackers to cause a denial of service via TKEY queries."
     },
@@ -131,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · Apache Struts"
       },
       "sev": "high",
-      "days": 11,
+      "days": 12,
       "active": true,
       "desc": "Apache Struts contains a command injection vulnerability that could allow remote attackers to execute arbitrary code via method:prefix when Dynamic Method Invocation is enabled."
     },
@@ -143,7 +143,7 @@
         "ru": "Эксплуатируемая уязвимость · Strapi Strapi"
       },
       "sev": "high",
-      "days": 11,
+      "days": 12,
       "active": true,
       "desc": "Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s) could "
     }
