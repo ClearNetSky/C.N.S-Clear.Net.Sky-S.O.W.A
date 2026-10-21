@@ -1,8 +1,80 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "items": [
+    {
+      "name": "CVE-2026-106931",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · EG Secure Solutions SiteGuard Server Edition",
+        "ru": "Эксплуатируемая уязвимость · EG Secure Solutions SiteGuard Server Edition"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected p"
+    },
+    {
+      "name": "CVE-2026-96656",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Plex Media Server",
+        "ru": "Эксплуатируемая уязвимость · Plex Media Server"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652"
+    },
+    {
+      "name": "CVE-2026-96655",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Plex Media Server",
+        "ru": "Эксплуатируемая уязвимость · Plex Media Server"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path paramet"
+    },
+    {
+      "name": "CVE-2026-96654",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Plex Media Server",
+        "ru": "Эксплуатируемая уязвимость · Plex Media Server"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability c"
+    },
+    {
+      "name": "CVE-2026-96652",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Plex Media Server",
+        "ru": "Эксплуатируемая уязвимость · Plex Media Server"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST"
+    },
+    {
+      "name": "CVE-2026-110936",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Siemens Software Center",
+        "ru": "Эксплуатируемая уязвимость · Siemens Software Center"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading t"
+    },
     {
       "name": "CVE-2026-102764",
       "cat": "vulnerability",
@@ -11,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · BeyondTrust Remote Support"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance."
     },
@@ -23,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · Fortinet Multiple Products"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary fi"
     },
@@ -35,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · Atlassian Multiple Products"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
       "desc": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or "
     },
@@ -47,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · Ahsay AhsayCBS"
       },
       "sev": "high",
-      "days": 6,
+      "days": 7,
       "active": true,
       "desc": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/"
     },
@@ -59,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · Cisco Secure Email Gateway"
       },
       "sev": "high",
-      "days": 6,
+      "days": 7,
       "active": true,
       "desc": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system."
     },
@@ -71,81 +143,9 @@
         "ru": "Эксплуатируемая уязвимость · Ahsay AhsayCBS"
       },
       "sev": "high",
-      "days": 6,
+      "days": 7,
       "active": true,
       "desc": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component’s checkSysPwd function. This vuln"
-    },
-    {
-      "name": "CVE-2026-0322",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Palo Alto Networks PAN-OS",
-        "ru": "Эксплуатируемая уязвимость · Palo Alto Networks PAN-OS"
-      },
-      "sev": "high",
-      "days": 6,
-      "active": true,
-      "desc": "Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall."
-    },
-    {
-      "name": "CVE-2026-104935",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Ivanti Connect Secure",
-        "ru": "Эксплуатируемая уязвимость · Ivanti Connect Secure"
-      },
-      "sev": "high",
-      "days": 7,
-      "active": true,
-      "desc": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands."
-    },
-    {
-      "name": "CVE-2026-96951",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Microsoft Windows",
-        "ru": "Эксплуатируемая уязвимость · Microsoft Windows"
-      },
-      "sev": "high",
-      "days": 7,
-      "active": true,
-      "desc": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network."
-    },
-    {
-      "name": "CVE-2015-5477",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · ISC BIND",
-        "ru": "Эксплуатируемая уязвимость · ISC BIND"
-      },
-      "sev": "high",
-      "days": 12,
-      "active": true,
-      "desc": "ISC BIND contains a data processing errors vulnerability that could allow remote attackers to cause a denial of service via TKEY queries."
-    },
-    {
-      "name": "CVE-2016-3081",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Apache Struts",
-        "ru": "Эксплуатируемая уязвимость · Apache Struts"
-      },
-      "sev": "high",
-      "days": 12,
-      "active": true,
-      "desc": "Apache Struts contains a command injection vulnerability that could allow remote attackers to execute arbitrary code via method:prefix when Dynamic Method Invocation is enabled."
-    },
-    {
-      "name": "CVE-2023-22894",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Strapi Strapi",
-        "ru": "Эксплуатируемая уязвимость · Strapi Strapi"
-      },
-      "sev": "high",
-      "days": 12,
-      "active": true,
-      "desc": "Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s) could "
     }
   ]
 }
