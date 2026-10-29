@@ -1,8 +1,32 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "items": [
+    {
+      "name": "CVE-2026-41709",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Broadcom VMware ESX",
+        "ru": "Эксплуатируемая уязвимость · Broadcom VMware ESX"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged."
+    },
+    {
+      "name": "CVE-2026-46300",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Linux Kernel",
+        "ru": "Эксплуатируемая уязвимость · Linux Kernel"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer co"
+    },
     {
       "name": "CVE-2026-48356",
       "cat": "vulnerability",
@@ -11,7 +35,7 @@
         "ru": "Эксплуатируемая уязвимость · Adobe Commerce and Magento"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or"
     },
@@ -23,7 +47,7 @@
         "ru": "Эксплуатируемая уязвимость · Google Brotli"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Google Brotli contains an unchecked return value vulnerability that allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or pot"
     },
@@ -35,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · PHP Group PHP"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution."
     },
@@ -47,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · PHP Group PHP"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution."
     },
@@ -59,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · Arista VeloCloud Orchestrator"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
       "desc": "Arista VeloCloud Orchestrator on-prem contains a SQL injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise th"
     },
@@ -71,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · Collabora Collabora Online – Built-in CODE Server"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
       "desc": "Collabora Collabora Online – Built-in CODE Server when used within the NextCloud platform contains an OS command injection vulnerability that allows for remote code execution when the CODE server isn't running."
     },
@@ -83,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · EG Secure Solutions SiteGuard Server Edition"
       },
       "sev": "high",
-      "days": 8,
+      "days": 9,
       "active": true,
       "desc": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected p"
     },
@@ -95,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · Plex Media Server"
       },
       "sev": "high",
-      "days": 8,
+      "days": 9,
       "active": true,
       "desc": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652"
     },
@@ -107,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · Plex Media Server"
       },
       "sev": "high",
-      "days": 8,
+      "days": 9,
       "active": true,
       "desc": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path paramet"
     },
@@ -119,33 +143,9 @@
         "ru": "Эксплуатируемая уязвимость · Plex Media Server"
       },
       "sev": "high",
-      "days": 8,
+      "days": 9,
       "active": true,
       "desc": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability c"
-    },
-    {
-      "name": "CVE-2026-96652",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Plex Media Server",
-        "ru": "Эксплуатируемая уязвимость · Plex Media Server"
-      },
-      "sev": "high",
-      "days": 8,
-      "active": true,
-      "desc": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST"
-    },
-    {
-      "name": "CVE-2026-110936",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Siemens Software Center",
-        "ru": "Эксплуатируемая уязвимость · Siemens Software Center"
-      },
-      "sev": "high",
-      "days": 8,
-      "active": true,
-      "desc": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading t"
     }
   ]
 }
