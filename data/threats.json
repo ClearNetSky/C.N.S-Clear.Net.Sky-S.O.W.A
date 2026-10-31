@@ -1,8 +1,32 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "items": [
+    {
+      "name": "CVE-2026-118527",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Ivanti Connect Secure",
+        "ru": "Эксплуатируемая уязвимость · Ivanti Connect Secure"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk. Th"
+    },
+    {
+      "name": "CVE-2026-111357",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Ivanti Connect Secure",
+        "ru": "Эксплуатируемая уязвимость · Ivanti Connect Secure"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-10"
+    },
     {
       "name": "CVE-2026-97229",
       "cat": "vulnerability",
@@ -11,7 +35,7 @@
         "ru": "Эксплуатируемая уязвимость · GitLab Community Edition and Enterprise Edition"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regul"
     },
@@ -23,7 +47,7 @@
         "ru": "Эксплуатируемая уязвимость · Cisco Secure Firewall ASA Software and Cisco Secure FTD Software"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to re"
     },
@@ -35,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · Broadcom VMware ESX"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged."
     },
@@ -47,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · Linux Kernel"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer co"
     },
@@ -59,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · Adobe Commerce and Magento"
       },
       "sev": "high",
-      "days": 3,
+      "days": 4,
       "active": true,
       "desc": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or"
     },
@@ -71,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · Google Brotli"
       },
       "sev": "high",
-      "days": 3,
+      "days": 4,
       "active": true,
       "desc": "Google Brotli contains an unchecked return value vulnerability that allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or pot"
     },
@@ -83,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · PHP Group PHP"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution."
     },
@@ -95,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · PHP Group PHP"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution."
     },
@@ -107,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · Arista VeloCloud Orchestrator"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Arista VeloCloud Orchestrator on-prem contains a SQL injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise th"
     },
@@ -119,33 +143,9 @@
         "ru": "Эксплуатируемая уязвимость · Collabora Collabora Online – Built-in CODE Server"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Collabora Collabora Online – Built-in CODE Server when used within the NextCloud platform contains an OS command injection vulnerability that allows for remote code execution when the CODE server isn't running."
-    },
-    {
-      "name": "CVE-2026-106931",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · EG Secure Solutions SiteGuard Server Edition",
-        "ru": "Эксплуатируемая уязвимость · EG Secure Solutions SiteGuard Server Edition"
-      },
-      "sev": "high",
-      "days": 10,
-      "active": true,
-      "desc": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected p"
-    },
-    {
-      "name": "CVE-2026-96656",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Plex Media Server",
-        "ru": "Эксплуатируемая уязвимость · Plex Media Server"
-      },
-      "sev": "high",
-      "days": 10,
-      "active": true,
-      "desc": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652"
     }
   ]
 }
