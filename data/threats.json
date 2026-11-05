@@ -1,8 +1,20 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "items": [
+    {
+      "name": "CVE-2024-27834",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Apple Multiple Products",
+        "ru": "Эксплуатируемая уязвимость · Apple Multiple Products"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authentication."
+    },
     {
       "name": "CVE-2026-119977",
       "cat": "vulnerability",
@@ -11,7 +23,7 @@
         "ru": "Эксплуатируемая уязвимость · WordPress WordPress Core"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window. This is due to predi"
     },
@@ -23,7 +35,7 @@
         "ru": "Эксплуатируемая уязвимость · Ivanti Connect Secure"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
       "desc": "Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk. Th"
     },
@@ -35,7 +47,7 @@
         "ru": "Эксплуатируемая уязвимость · Ivanti Connect Secure"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
       "desc": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-10"
     },
@@ -47,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · GitLab Community Edition and Enterprise Edition"
       },
       "sev": "high",
-      "days": 6,
+      "days": 7,
       "active": true,
       "desc": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regul"
     },
@@ -59,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · Cisco Secure Firewall ASA Software and Cisco Secure FTD Software"
       },
       "sev": "high",
-      "days": 6,
+      "days": 7,
       "active": true,
       "desc": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to re"
     },
@@ -71,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · Broadcom VMware ESX"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged."
     },
@@ -83,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · Linux Kernel"
       },
       "sev": "high",
-      "days": 7,
+      "days": 8,
       "active": true,
       "desc": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer co"
     },
@@ -95,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · Adobe Commerce and Magento"
       },
       "sev": "high",
-      "days": 8,
+      "days": 9,
       "active": true,
       "desc": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or"
     },
@@ -107,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · Google Brotli"
       },
       "sev": "high",
-      "days": 8,
+      "days": 9,
       "active": true,
       "desc": "Google Brotli contains an unchecked return value vulnerability that allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or pot"
     },
@@ -119,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · PHP Group PHP"
       },
       "sev": "high",
-      "days": 9,
+      "days": 10,
       "active": true,
       "desc": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution."
     },
@@ -131,21 +143,9 @@
         "ru": "Эксплуатируемая уязвимость · PHP Group PHP"
       },
       "sev": "high",
-      "days": 9,
+      "days": 10,
       "active": true,
       "desc": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution."
-    },
-    {
-      "name": "CVE-2026-114625",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Arista VeloCloud Orchestrator",
-        "ru": "Эксплуатируемая уязвимость · Arista VeloCloud Orchestrator"
-      },
-      "sev": "high",
-      "days": 12,
-      "active": true,
-      "desc": "Arista VeloCloud Orchestrator on-prem contains a SQL injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise th"
     }
   ]
 }
