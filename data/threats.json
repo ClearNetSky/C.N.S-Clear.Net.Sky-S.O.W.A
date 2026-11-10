@@ -1,8 +1,56 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "items": [
+    {
+      "name": "CVE-2026-102895",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · GPUStack GPUStack",
+        "ru": "Эксплуатируемая уязвимость · GPUStack GPUStack"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclosure of worker and cl"
+    },
+    {
+      "name": "CVE-2026-123158",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · OpenBSD OpenSSH",
+        "ru": "Эксплуатируемая уязвимость · OpenBSD OpenSSH"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass."
+    },
+    {
+      "name": "CVE-2026-116779",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · SignalWire FreeSwitch",
+        "ru": "Эксплуатируемая уязвимость · SignalWire FreeSwitch"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution."
+    },
+    {
+      "name": "CVE-2026-123218",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · IBM Aspera Faspex",
+        "ru": "Эксплуатируемая уязвимость · IBM Aspera Faspex"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "IBM Aspera Faspex contains an incorrect authorization vulnerability that could allow an authenticated user to craft a specific message to bypass authorization, causing privilege escalations."
+    },
     {
       "name": "CVE-2026-19868",
       "cat": "vulnerability",
@@ -11,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · SonicWall SonicOS SSLVPN"
       },
       "sev": "high",
-      "days": 3,
+      "days": 4,
       "active": true,
       "desc": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful"
     },
@@ -23,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · Apple Multiple Products"
       },
       "sev": "high",
-      "days": 5,
+      "days": 6,
       "active": true,
       "desc": "Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authentication."
     },
@@ -35,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · WordPress WordPress Core"
       },
       "sev": "high",
-      "days": 6,
+      "days": 7,
       "active": true,
       "desc": "WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window. This is due to predi"
     },
@@ -47,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · Ivanti Connect Secure"
       },
       "sev": "high",
-      "days": 10,
+      "days": 11,
       "active": true,
       "desc": "Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk. Th"
     },
@@ -59,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · Ivanti Connect Secure"
       },
       "sev": "high",
-      "days": 10,
+      "days": 11,
       "active": true,
       "desc": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-10"
     },
@@ -71,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · GitLab Community Edition and Enterprise Edition"
       },
       "sev": "high",
-      "days": 11,
+      "days": 12,
       "active": true,
       "desc": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regul"
     },
@@ -83,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · Cisco Secure Firewall ASA Software and Cisco Secure FTD Software"
       },
       "sev": "high",
-      "days": 11,
+      "days": 12,
       "active": true,
       "desc": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to re"
     },
@@ -95,57 +143,9 @@
         "ru": "Эксплуатируемая уязвимость · Broadcom VMware ESX"
       },
       "sev": "high",
-      "days": 12,
+      "days": 13,
       "active": true,
       "desc": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged."
-    },
-    {
-      "name": "CVE-2026-46300",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Linux Kernel",
-        "ru": "Эксплуатируемая уязвимость · Linux Kernel"
-      },
-      "sev": "high",
-      "days": 12,
-      "active": true,
-      "desc": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer co"
-    },
-    {
-      "name": "CVE-2026-48356",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Adobe Commerce and Magento",
-        "ru": "Эксплуатируемая уязвимость · Adobe Commerce and Magento"
-      },
-      "sev": "high",
-      "days": 13,
-      "active": true,
-      "desc": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or"
-    },
-    {
-      "name": "CVE-2026-111497",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Google Brotli",
-        "ru": "Эксплуатируемая уязвимость · Google Brotli"
-      },
-      "sev": "high",
-      "days": 13,
-      "active": true,
-      "desc": "Google Brotli contains an unchecked return value vulnerability that allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or pot"
-    },
-    {
-      "name": "CVE-2026-109618",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · PHP Group PHP",
-        "ru": "Эксплуатируемая уязвимость · PHP Group PHP"
-      },
-      "sev": "high",
-      "days": 14,
-      "active": true,
-      "desc": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution."
     }
   ]
 }
