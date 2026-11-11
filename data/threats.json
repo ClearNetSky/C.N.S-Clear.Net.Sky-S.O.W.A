@@ -1,8 +1,80 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "items": [
+    {
+      "name": "CVE-2026-124194",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Microsoft Office",
+        "ru": "Эксплуатируемая уязвимость · Microsoft Office"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Microsoft Office Outlook contains a missing user interaction for potentially unsafe action vulnerability that allows an unauthorized attacker to perform spoofing over a network."
+    },
+    {
+      "name": "CVE-2026-111793",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Openwave Messaging Limited Webtop Media Transcoder",
+        "ru": "Эксплуатируемая уязвимость · Openwave Messaging Limited Webtop Media Transcoder"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability that may allow an authenticated user to process and convert unintended document types if bypassing "
+    },
+    {
+      "name": "CVE-2026-20320",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Cisco BroadWorks",
+        "ru": "Эксплуатируемая уязвимость · Cisco BroadWorks"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system."
+    },
+    {
+      "name": "CVE-2026-111560",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Barracuda Networks Multiple Products",
+        "ru": "Эксплуатируемая уязвимость · Barracuda Networks Multiple Products"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Barracuda Networks Email Security Gateway (ESG), Load Balancer, Application Delivery Controller (ADC), Message Archiver (BMA), WAF Control Center (WCC), Web Application Firewall (WAF), and Web Security Gateway (WSG) cont"
+    },
+    {
+      "name": "CVE-2026-116606",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Barracuda Networks Barracuda Email Security Gateway (ESG)",
+        "ru": "Эксплуатируемая уязвимость · Barracuda Networks Barracuda Email Security Gateway (ESG)"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Barracuda Networks Email Security Gateway (ESG) contains an authentication bypass using an alternate path or channel that could allow an unauthenticated remote attacker to invoke a configuration-import function and resto"
+    },
+    {
+      "name": "CVE-2026-125350",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Google Chromium",
+        "ru": "Эксплуатируемая уязвимость · Google Chromium"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Google Chromium contains a use-after-free vulnerability in the XML component that could allow a remote attacker to execute arbitrary code inside the sandbox via a specially crafted webpage. This vulnerability could affec"
+    },
     {
       "name": "CVE-2026-102895",
       "cat": "vulnerability",
@@ -11,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · GPUStack GPUStack"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclosure of worker and cl"
     },
@@ -23,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · OpenBSD OpenSSH"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass."
     },
@@ -35,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · SignalWire FreeSwitch"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution."
     },
@@ -47,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · IBM Aspera Faspex"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "IBM Aspera Faspex contains an incorrect authorization vulnerability that could allow an authenticated user to craft a specific message to bypass authorization, causing privilege escalations."
     },
@@ -59,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · SonicWall SonicOS SSLVPN"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful"
     },
@@ -71,81 +143,9 @@
         "ru": "Эксплуатируемая уязвимость · Apple Multiple Products"
       },
       "sev": "high",
-      "days": 6,
-      "active": true,
-      "desc": "Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authentication."
-    },
-    {
-      "name": "CVE-2026-119977",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · WordPress WordPress Core",
-        "ru": "Эксплуатируемая уязвимость · WordPress WordPress Core"
-      },
-      "sev": "high",
       "days": 7,
       "active": true,
-      "desc": "WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window. This is due to predi"
-    },
-    {
-      "name": "CVE-2026-118527",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Ivanti Connect Secure",
-        "ru": "Эксплуатируемая уязвимость · Ivanti Connect Secure"
-      },
-      "sev": "high",
-      "days": 11,
-      "active": true,
-      "desc": "Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk. Th"
-    },
-    {
-      "name": "CVE-2026-111357",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Ivanti Connect Secure",
-        "ru": "Эксплуатируемая уязвимость · Ivanti Connect Secure"
-      },
-      "sev": "high",
-      "days": 11,
-      "active": true,
-      "desc": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-10"
-    },
-    {
-      "name": "CVE-2026-97229",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · GitLab Community Edition and Enterprise Edition",
-        "ru": "Эксплуатируемая уязвимость · GitLab Community Edition and Enterprise Edition"
-      },
-      "sev": "high",
-      "days": 12,
-      "active": true,
-      "desc": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regul"
-    },
-    {
-      "name": "CVE-2026-76418",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Cisco Secure Firewall ASA Software and Cisco Secure FTD Software",
-        "ru": "Эксплуатируемая уязвимость · Cisco Secure Firewall ASA Software and Cisco Secure FTD Software"
-      },
-      "sev": "high",
-      "days": 12,
-      "active": true,
-      "desc": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to re"
-    },
-    {
-      "name": "CVE-2026-41709",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Broadcom VMware ESX",
-        "ru": "Эксплуатируемая уязвимость · Broadcom VMware ESX"
-      },
-      "sev": "high",
-      "days": 13,
-      "active": true,
-      "desc": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged."
+      "desc": "Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authentication."
     }
   ]
 }
