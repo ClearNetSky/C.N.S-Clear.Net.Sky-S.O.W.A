@@ -1,7 +1,7 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "items": [
     {
       "name": "CVE-2024-10441",
@@ -11,7 +11,7 @@
         "ru": "Эксплуатируемая уязвимость · Synology DiskStation Manager (DSM)"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vect"
     },
@@ -23,7 +23,7 @@
         "ru": "Эксплуатируемая уязвимость · BerriAI LiteLLM"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI."
     },
@@ -35,7 +35,7 @@
         "ru": "Эксплуатируемая уязвимость · Vanderbilt University Research Electronic Data Capture (REDCap)"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit thi"
     },
@@ -47,7 +47,7 @@
         "ru": "Эксплуатируемая уязвимость · Apache Axis"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Apache Axis contains an unsafe reflection vulnerability that could allow an unauthenticated remote attacker to execute arbitrary code via a crafted SOAP fault message that causes Axis to load and instantiate an attacker-"
     },
@@ -59,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · Perforce Puppet Enterprise"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in Puppet’s report-processing code that allows a client with any CA-signed agent certificate to execute arbitrary code on the Puppet S"
     },
@@ -71,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · UnrealIRCd UnrealIRCd"
       },
       "sev": "high",
-      "days": 6,
+      "days": 7,
       "active": true,
       "desc": "UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server au"
     },
@@ -83,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · Check Point Multiple Products"
       },
       "sev": "high",
-      "days": 6,
+      "days": 7,
       "active": true,
       "desc": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when th"
     },
@@ -95,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · Microsoft Office"
       },
       "sev": "high",
-      "days": 9,
+      "days": 10,
       "active": true,
       "desc": "Microsoft Office Outlook contains a missing user interaction for potentially unsafe action vulnerability that allows an unauthorized attacker to perform spoofing over a network."
     },
@@ -107,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · Openwave Messaging Limited Webtop Media Transcoder"
       },
       "sev": "high",
-      "days": 9,
+      "days": 10,
       "active": true,
       "desc": "Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability that may allow an authenticated user to process and convert unintended document types if bypassing "
     },
@@ -119,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · Cisco BroadWorks"
       },
       "sev": "high",
-      "days": 9,
+      "days": 10,
       "active": true,
       "desc": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system."
     },
@@ -131,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · Barracuda Networks Multiple Products"
       },
       "sev": "high",
-      "days": 9,
+      "days": 10,
       "active": true,
       "desc": "Barracuda Networks Email Security Gateway (ESG), Load Balancer, Application Delivery Controller (ADC), Message Archiver (BMA), WAF Control Center (WCC), Web Application Firewall (WAF), and Web Security Gateway (WSG) cont"
     },
@@ -143,7 +143,7 @@
         "ru": "Эксплуатируемая уязвимость · Barracuda Networks Barracuda Email Security Gateway (ESG)"
       },
       "sev": "high",
-      "days": 9,
+      "days": 10,
       "active": true,
       "desc": "Barracuda Networks Email Security Gateway (ESG) contains an authentication bypass using an alternate path or channel that could allow an unauthenticated remote attacker to invoke a configuration-import function and resto"
     }
