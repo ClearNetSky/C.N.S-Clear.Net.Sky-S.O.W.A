@@ -1,8 +1,20 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "items": [
+    {
+      "name": "CVE-2026-103406",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router",
+        "ru": "Эксплуатируемая уязвимость · Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router"
+      },
+      "sev": "high",
+      "days": 0,
+      "active": true,
+      "desc": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router contain an OS command injection vulnerability that could allow a remote attacker to execute arbitrary commands as root via a speci"
+    },
     {
       "name": "CVE-2026-132224",
       "cat": "vulnerability",
@@ -11,7 +23,7 @@
         "ru": "Эксплуатируемая уязвимость · Optimizely Web Experimentation"
       },
       "sev": "high",
-      "days": 0,
+      "days": 1,
       "active": true,
       "desc": "Optimizely Web Experimentation contains an external control of critical state data vulnerability in its account signup flow that could allow an attacker to impersonate existing customer users and modify Project JavaScrip"
     },
@@ -23,7 +35,7 @@
         "ru": "Эксплуатируемая уязвимость · Idunno AntiCsrf"
       },
       "sev": "high",
-      "days": 0,
+      "days": 1,
       "active": true,
       "desc": "Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life (EoL)"
     },
@@ -35,7 +47,7 @@
         "ru": "Эксплуатируемая уязвимость · Drupal Core"
       },
       "sev": "high",
-      "days": 0,
+      "days": 1,
       "active": true,
       "desc": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the atta"
     },
@@ -47,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · Project MONAI MONAI Label"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code exe"
     },
@@ -59,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · N-able MailAssure"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "N-able MailAssure (SpamExperts) contains a server-side request forgery vulnerability in the LDAP synchronization connection check that allows an authenticated API user to connect to arbitrary internal hosts and ports, de"
     },
@@ -71,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · Apache Roller"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension "
     },
@@ -83,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · Broadcom VMware vCenter"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass "
     },
@@ -95,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · SAP NetWeaver"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI"
     },
@@ -107,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · Cisco Expressway Series"
       },
       "sev": "high",
-      "days": 4,
+      "days": 5,
       "active": true,
       "desc": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device "
     },
@@ -119,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · Synology DiskStation Manager (DSM)"
       },
       "sev": "critical",
-      "days": 6,
+      "days": 7,
       "active": true,
       "desc": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vect"
     },
@@ -131,21 +143,9 @@
         "ru": "Эксплуатируемая уязвимость · BerriAI LiteLLM"
       },
       "sev": "high",
-      "days": 6,
+      "days": 7,
       "active": true,
       "desc": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI."
-    },
-    {
-      "name": "CVE-2026-90817",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Vanderbilt University Research Electronic Data Capture (REDCap)",
-        "ru": "Эксплуатируемая уязвимость · Vanderbilt University Research Electronic Data Capture (REDCap)"
-      },
-      "sev": "high",
-      "days": 6,
-      "active": true,
-      "desc": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit thi"
     }
   ]
 }
