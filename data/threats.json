@@ -1,7 +1,7 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "items": [
     {
       "name": "CVE-2026-103406",
@@ -11,9 +11,117 @@
         "ru": "Эксплуатируемая уязвимость · Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router"
       },
       "sev": "high",
-      "days": 0,
+      "days": 1,
       "active": true,
       "desc": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router contain an OS command injection vulnerability that could allow a remote attacker to execute arbitrary commands as root via a speci"
+    },
+    {
+      "name": "CVE-2026-133469",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Vates Xen Orchestra",
+        "ru": "Эксплуатируемая уязвимость · Vates Xen Orchestra"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Vates Xen Orchestra contains an improper validation of specified type of input vulnerability that could allow an unauthenticated attacker to bypass authentication and perform actions with administrative privileges via a "
+    },
+    {
+      "name": "CVE-2025-41450",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Danfoss AK-SM 800A Series",
+        "ru": "Эксплуатируемая уязвимость · Danfoss AK-SM 800A Series"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Danfoss AK-SM 800A Series contains an improper authentication vulnerability that could allow an attacker to generate a web report exposing sensitive information, including internal IP addresses, usernames, and store name"
+    },
+    {
+      "name": "CVE-2023-25914",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Danfoss AK-SM 800A Series",
+        "ru": "Эксплуатируемая уязвимость · Danfoss AK-SM 800A Series"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Danfoss AK-SM 800A Series contains a path traversal vulnerability that could allow an attacker to access and read underlying server system files via the XML interface."
+    },
+    {
+      "name": "CVE-2023-25915",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Danfoss AK-SM 800A Series",
+        "ru": "Эксплуатируемая уязвимость · Danfoss AK-SM 800A Series"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Danfoss AK-SM 800A Series contains an improper input validation vulnerability that could allow a remote attacker to run arbitrary commands on the affected system."
+    },
+    {
+      "name": "CVE-2026-133324",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Mitel MiCollab",
+        "ru": "Эксплуатируемая уязвимость · Mitel MiCollab"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Mitel MiCollab contains a not failing securely vulnerability in the Audio, Web and Video Conferencing (AWV) component that could allow an unauthenticated attacker to bypass authentication controls and perform unauthorize"
+    },
+    {
+      "name": "CVE-2026-133275",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Mitel MiCollab",
+        "ru": "Эксплуатируемая уязвимость · Mitel MiCollab"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Mitel MiCollab contains an unrestricted upload of file with dangerous type vulnerability in the Audio, Web and Video Conferencing (AWV) component due to insufficient file type validation that could allow an unauthenticat"
+    },
+    {
+      "name": "CVE-2026-133311",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Mitel MiCollab",
+        "ru": "Эксплуатируемая уязвимость · Mitel MiCollab"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Mitel MiCollab contains a weak authentication vulnerability in the Audio, Web and Video Conferencing (AWV) component that could allow an unauthenticated attacker to access sensitive information using a specific system-ge"
+    },
+    {
+      "name": "CVE-2026-133303",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Mitel MiCollab",
+        "ru": "Эксплуатируемая уязвимость · Mitel MiCollab"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Mitel MiCollab contains an XML injection vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could allow an unauthenticated attacker to execute arbitrary commands using pre-staged malicious conte"
+    },
+    {
+      "name": "CVE-2026-133323",
+      "cat": "vulnerability",
+      "type": {
+        "en": "Exploited vulnerability · Mitel MiCollab",
+        "ru": "Эксплуатируемая уязвимость · Mitel MiCollab"
+      },
+      "sev": "high",
+      "days": 1,
+      "active": true,
+      "desc": "Mitel MiCollab contains an improper neutralization of special elements used in an OS command (OS command injection) vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could allow an unauthentica"
     },
     {
       "name": "CVE-2026-132224",
@@ -23,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · Optimizely Web Experimentation"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Optimizely Web Experimentation contains an external control of critical state data vulnerability in its account signup flow that could allow an attacker to impersonate existing customer users and modify Project JavaScrip"
     },
@@ -35,117 +143,9 @@
         "ru": "Эксплуатируемая уязвимость · Idunno AntiCsrf"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life (EoL)"
-    },
-    {
-      "name": "CVE-2026-132165",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Drupal Core",
-        "ru": "Эксплуатируемая уязвимость · Drupal Core"
-      },
-      "sev": "high",
-      "days": 1,
-      "active": true,
-      "desc": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the atta"
-    },
-    {
-      "name": "CVE-2026-133968",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Project MONAI MONAI Label",
-        "ru": "Эксплуатируемая уязвимость · Project MONAI MONAI Label"
-      },
-      "sev": "high",
-      "days": 2,
-      "active": true,
-      "desc": "Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code exe"
-    },
-    {
-      "name": "CVE-2026-134624",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · N-able MailAssure",
-        "ru": "Эксплуатируемая уязвимость · N-able MailAssure"
-      },
-      "sev": "high",
-      "days": 2,
-      "active": true,
-      "desc": "N-able MailAssure (SpamExperts) contains a server-side request forgery vulnerability in the LDAP synchronization connection check that allows an authenticated API user to connect to arbitrary internal hosts and ports, de"
-    },
-    {
-      "name": "CVE-2026-129448",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Apache Roller",
-        "ru": "Эксплуатируемая уязвимость · Apache Roller"
-      },
-      "sev": "high",
-      "days": 5,
-      "active": true,
-      "desc": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension "
-    },
-    {
-      "name": "CVE-2026-123890",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Broadcom VMware vCenter",
-        "ru": "Эксплуатируемая уязвимость · Broadcom VMware vCenter"
-      },
-      "sev": "high",
-      "days": 5,
-      "active": true,
-      "desc": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass "
-    },
-    {
-      "name": "CVE-2025-42884",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · SAP NetWeaver",
-        "ru": "Эксплуатируемая уязвимость · SAP NetWeaver"
-      },
-      "sev": "high",
-      "days": 5,
-      "active": true,
-      "desc": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI"
-    },
-    {
-      "name": "CVE-2026-76466",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Cisco Expressway Series",
-        "ru": "Эксплуатируемая уязвимость · Cisco Expressway Series"
-      },
-      "sev": "high",
-      "days": 5,
-      "active": true,
-      "desc": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device "
-    },
-    {
-      "name": "CVE-2024-10441",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · Synology DiskStation Manager (DSM)",
-        "ru": "Эксплуатируемая уязвимость · Synology DiskStation Manager (DSM)"
-      },
-      "sev": "critical",
-      "days": 7,
-      "active": true,
-      "desc": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vect"
-    },
-    {
-      "name": "CVE-2026-40217",
-      "cat": "vulnerability",
-      "type": {
-        "en": "Exploited vulnerability · BerriAI LiteLLM",
-        "ru": "Эксплуатируемая уязвимость · BerriAI LiteLLM"
-      },
-      "sev": "high",
-      "days": 7,
-      "active": true,
-      "desc": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI."
     }
   ]
 }
