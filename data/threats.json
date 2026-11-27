@@ -1,7 +1,7 @@
 {
   "source": "CISA Known Exploited Vulnerabilities Catalog",
   "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "items": [
     {
       "name": "CVE-2026-103406",
@@ -11,7 +11,7 @@
         "ru": "Эксплуатируемая уязвимость · Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router contain an OS command injection vulnerability that could allow a remote attacker to execute arbitrary commands as root via a speci"
     },
@@ -23,7 +23,7 @@
         "ru": "Эксплуатируемая уязвимость · Vates Xen Orchestra"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Vates Xen Orchestra contains an improper validation of specified type of input vulnerability that could allow an unauthenticated attacker to bypass authentication and perform actions with administrative privileges via a "
     },
@@ -35,7 +35,7 @@
         "ru": "Эксплуатируемая уязвимость · Danfoss AK-SM 800A Series"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Danfoss AK-SM 800A Series contains an improper authentication vulnerability that could allow an attacker to generate a web report exposing sensitive information, including internal IP addresses, usernames, and store name"
     },
@@ -47,7 +47,7 @@
         "ru": "Эксплуатируемая уязвимость · Danfoss AK-SM 800A Series"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Danfoss AK-SM 800A Series contains a path traversal vulnerability that could allow an attacker to access and read underlying server system files via the XML interface."
     },
@@ -59,7 +59,7 @@
         "ru": "Эксплуатируемая уязвимость · Danfoss AK-SM 800A Series"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Danfoss AK-SM 800A Series contains an improper input validation vulnerability that could allow a remote attacker to run arbitrary commands on the affected system."
     },
@@ -71,7 +71,7 @@
         "ru": "Эксплуатируемая уязвимость · Mitel MiCollab"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Mitel MiCollab contains a not failing securely vulnerability in the Audio, Web and Video Conferencing (AWV) component that could allow an unauthenticated attacker to bypass authentication controls and perform unauthorize"
     },
@@ -83,7 +83,7 @@
         "ru": "Эксплуатируемая уязвимость · Mitel MiCollab"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Mitel MiCollab contains an unrestricted upload of file with dangerous type vulnerability in the Audio, Web and Video Conferencing (AWV) component due to insufficient file type validation that could allow an unauthenticat"
     },
@@ -95,7 +95,7 @@
         "ru": "Эксплуатируемая уязвимость · Mitel MiCollab"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Mitel MiCollab contains a weak authentication vulnerability in the Audio, Web and Video Conferencing (AWV) component that could allow an unauthenticated attacker to access sensitive information using a specific system-ge"
     },
@@ -107,7 +107,7 @@
         "ru": "Эксплуатируемая уязвимость · Mitel MiCollab"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Mitel MiCollab contains an XML injection vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could allow an unauthenticated attacker to execute arbitrary commands using pre-staged malicious conte"
     },
@@ -119,7 +119,7 @@
         "ru": "Эксплуатируемая уязвимость · Mitel MiCollab"
       },
       "sev": "high",
-      "days": 1,
+      "days": 2,
       "active": true,
       "desc": "Mitel MiCollab contains an improper neutralization of special elements used in an OS command (OS command injection) vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could allow an unauthentica"
     },
@@ -131,7 +131,7 @@
         "ru": "Эксплуатируемая уязвимость · Optimizely Web Experimentation"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "Optimizely Web Experimentation contains an external control of critical state data vulnerability in its account signup flow that could allow an attacker to impersonate existing customer users and modify Project JavaScrip"
     },
@@ -143,7 +143,7 @@
         "ru": "Эксплуатируемая уязвимость · Idunno AntiCsrf"
       },
       "sev": "high",
-      "days": 2,
+      "days": 3,
       "active": true,
       "desc": "Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life (EoL)"
     }
